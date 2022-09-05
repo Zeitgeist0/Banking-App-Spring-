@@ -1,0 +1,42 @@
+GET http://localhost:9000/customers/5
+
+<> 2022-09-05T225913.200.json
+
+###
+
+GET http://localhost:9000/accounts/all
+
+<> 2022-09-05T225904.200.json
+
+###
+
+GET http://localhost:9000/customers/1
+
+<> 2022-09-05T211120.200.json
+
+###
+
+GET http://localhost:9000/customers/1
+
+<> 2022-09-05T211020.500.json
+
+###
+
+GET http://localhost:9000/accounts/1
+
+<> 2022-09-05T183312.200.json
+
+###
+
+GET http://localhost:9000/accounts/1
+
+<> 2022-09-05T181349.200.json
+
+###
+
+GET http://localhost:9000/accounts/1
+
+<> 2022-09-05T181318.200.json
+
+###
+

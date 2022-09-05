@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "name": "Test1",
+  "email": "test@test.com",
+  "age": 2,
+  "accounts": [
+    {
+      "id": 7,
+      "number": "d2e8ed0a-22ed-47ff-be01-fe5f741c2e8b",
+      "currency": "testcoin",
+      "balance": 0.0,
+      "customerId": 1
+    },
+    {
+      "id": 8,
+      "number": "74323eb0-fbf6-4b0e-bab5-47eabed09d9d",
+      "currency": "post",
+      "balance": 0.0,
+      "customerId": 1
+    }
+  ]
+}
