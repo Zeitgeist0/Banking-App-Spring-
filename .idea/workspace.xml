@@ -4,19 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8712278-4a96-4ccf-b00f-0a16861a3de1" name="Changes" comment="frontend-maven-plugin connected with react">
-      <change afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/API/accounts/fetchAccounts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/API/customers/fetchAllCustomers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/API/customers/fetchAllCustomersAndAccounts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+    <list default="true" id="e8712278-4a96-4ccf-b00f-0a16861a3de1" name="Changes" comment="cross-origin enabled, first front-end prototype created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/front-end/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/front-end/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/java/com/b1/bankingapp1/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/java/com/b1/bankingapp1/resource/RestCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/java/com/b1/bankingapp1/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/java/com/b1/bankingapp1/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +122,7 @@
       <updated>1662377934706</updated>
       <workItem from="1662377936054" duration="27746000" />
       <workItem from="1662483324215" duration="181000" />
-      <workItem from="1662568990742" duration="7194000" />
+      <workItem from="1662568990742" duration="8304000" />
     </task>
     <task id="LOCAL-00001" summary="frontend-maven-plugin connected with react">
       <created>1662574578804</created>
@@ -140,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662574578804</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cross-origin enabled, first front-end prototype created">
+      <created>1662583721011</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662583721011</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="frontend-maven-plugin connected with react" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend-maven-plugin connected with react" />
+    <MESSAGE value="cross-origin enabled, first front-end prototype created" />
+    <option name="LAST_COMMIT_MESSAGE" value="cross-origin enabled, first front-end prototype created" />
   </component>
 </project>

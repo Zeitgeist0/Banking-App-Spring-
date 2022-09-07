@@ -20,7 +20,7 @@ fetchAllCustomersAndAccounts().then((customers) => {
       <ul className="customers-list">
         {customers.map((customer) => {
           return (
-            <li  key={customer.id}>
+            <li className="customer" key={customer.id}>
               <h4>User: </h4>
               <p> {customer.name} , {customer.age} years old. Email : {customer.email}</p>
            
