@@ -11,6 +11,7 @@ import java.util.List;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/customers")
+@CrossOrigin(origins = {"http://localhost:3000"})
 public class RestCustomerController {
   private final CustomerService customerService;
 
@@ -22,6 +23,12 @@ public class RestCustomerController {
   public List<Customer> getAll() {
     return customerService.findAll();
   }
+
+  @GetMapping("/andAccounts")
+  public List<Customer> getAllCustomersAndAccounts() {
+    return customerService.findAllCustomersAndAccounts();
+  }
+
   @PostMapping()
   public void save(@RequestBody Customer customer) {
     customerService.save(customer);

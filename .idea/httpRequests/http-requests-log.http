@@ -1,3 +1,39 @@
+GET http://localhost:9000/customers/andAccounts
+
+<> 2022-09-07T224016.200.json
+
+###
+
+GET http://localhost:9000/customers/andAccounts
+
+<> 2022-09-07T222833.200.json
+
+###
+
+GET http://localhost:9000/customers/all/CustomersAndAccounts
+
+<> 2022-09-07T222630.200.json
+
+###
+
+GET http://localhost:9000/customers/allCustomersAndAccounts
+
+<> 2022-09-07T222457.500.json
+
+###
+
+GET http://localhost:9000/customers/all
+
+<> 2022-09-07T213012.200.json
+
+###
+
+GET http://localhost:9000/customers/all
+
+<> 2022-09-07T211657.200.json
+
+###
+
 GET http://localhost:9000/customers/5
 
 <> 2022-09-05T225913.200.json

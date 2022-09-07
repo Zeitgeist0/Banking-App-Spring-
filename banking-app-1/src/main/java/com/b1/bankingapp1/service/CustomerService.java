@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @org.springframework.stereotype.Service
 @Transactional
@@ -43,8 +44,18 @@ public class CustomerService implements Service<Customer>{
 public boolean update (Customer customer) {
    return customerDao.update(customer);
 }
+
+  public List<Customer> findAllCustomersAndAccounts() {
+
+   return  customerDao.findAll().stream().map(customer -> {
+     List<Account> customerAccounts = accountDao.getByCustomerId(customer.getId());
+     customer.setAccounts(customerAccounts);
+     return customer;
+   }).collect(Collectors.toList());
+  }
+
   @Override
-  public List<Customer> findAll() {
+  public List<Customer> findAll () {
     return customerDao.findAll();
   }
 
