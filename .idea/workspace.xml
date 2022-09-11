@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="account number generation fixed">
-      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestEmployerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/EmployerService.java" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="employers dao/service/controller added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateEmployerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateEmployerDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Employer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/schema-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/schema-h2.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +132,7 @@
       <workItem from="1662827338454" duration="2099000" />
       <workItem from="1662892542506" duration="930000" />
       <workItem from="1662893721634" duration="1370000" />
-      <workItem from="1662895780204" duration="29001000" />
+      <workItem from="1662895780204" duration="29991000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -183,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662929216112</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="employers dao/service/controller added">
+      <created>1662930838703</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1662930838703</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +209,7 @@
     <MESSAGE value="automatic account number UUID generation implemented" />
     <MESSAGE value="AbstractEntity superclass implemented" />
     <MESSAGE value="account number generation fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="account number generation fixed" />
+    <MESSAGE value="employers dao/service/controller added" />
+    <option name="LAST_COMMIT_MESSAGE" value="employers dao/service/controller added" />
   </component>
 </project>
