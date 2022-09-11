@@ -4,34 +4,92 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Banking app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment=" dao/service/controller mapped according to hibernate">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_hibernate_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_hibernate_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/asset-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/css/main.daf70b9d.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/css/main.daf70b9d.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/787.22edae46.chunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/787.22edae46.chunk.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.825b145c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.825b145c.js.LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.825b145c.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/jsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/accounts/fetchAccounts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/customers/fetchAllCustomers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/customers/fetchAllCustomersAndAccounts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/BankingAppHibernateApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/ServletInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/Dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateAccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateCustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Currency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Employer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestCustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-h2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-postgres.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/schema-h2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/schema-postgres.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/test/java/com/app/banking/hibernate/bankingapphibernate/BankingAppHibernateApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-05T181318.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-05T181349.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-05T183312.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-05T211020.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-05T211120.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-05T225904.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-05T225913.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-07T211657.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-07T213012.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-07T222457.500.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-07T222630.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-07T222833.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2022-09-07T224016.200.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-client.cookies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-1/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-1/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,36 +97,69 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
   <component name="ProjectId" id="2EaIZdJR2KWAx0Dvw5XqL55RMZK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/banking-app-1/pom.xml" />
+    <property name="jdk.selected.JAVA_MODULE" value="17" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/banking-app-hibernate/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zeitg\OneDrive\Desktop\DanIT - FS\Banking app\banking-app-hibernate\src\main\resources" />
+      <recent name="C:\Users\zeitg\OneDrive\Desktop\DanIT - FS\Banking app\banking-app-hibernate\src\main\java\com\app\banking\hibernate\bankingapphibernate" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BankingAppHibernateApplication">
+    <configuration name="generated-requests#4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests#6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="BankingApp1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="banking-app-1" />
       <extension name="coverage">
@@ -82,8 +173,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BankingAppHibernateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="banking-app-hibernate" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.banking.hibernate.bankingapphibernate.BankingAppHibernateApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests#6" />
+        <item itemvalue="HTTP Request.generated-requests#5" />
+        <item itemvalue="HTTP Request.generated-requests#4" />
         <item itemvalue="Spring Boot.BankingApp1Application" />
       </list>
     </recent_temporary>
@@ -96,11 +197,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662827332029</updated>
-      <workItem from="1662827338454" duration="1293000" />
+      <workItem from="1662827338454" duration="2099000" />
+      <workItem from="1662892542506" duration="930000" />
+      <workItem from="1662893721634" duration="1370000" />
+      <workItem from="1662895780204" duration="15070000" />
     </task>
+    <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
+      <created>1662829998693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662829998693</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="prod environment connected to heroku DB" />
+    <MESSAGE value=" dao/service/controller mapped according to hibernate" />
+    <option name="LAST_COMMIT_MESSAGE" value=" dao/service/controller mapped according to hibernate" />
   </component>
 </project>
