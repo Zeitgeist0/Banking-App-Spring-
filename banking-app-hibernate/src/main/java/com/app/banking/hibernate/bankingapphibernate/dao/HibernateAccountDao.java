@@ -6,6 +6,7 @@ import org.hibernate.HibernateException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -162,7 +163,8 @@ public class HibernateAccountDao implements Dao<Account> {
 
 public void setFunds (String number, Double funds) {
   EntityManager entityManager = entityManagerFactory.createEntityManager();
-  Account account = getByNumber(number);
+  Account account = entityManager.createQuery("SELECT a from Account a where a.number = :number", Account.class)
+    .setParameter("number", number).getSingleResult();
   account.setBalance(funds);
 
   try {
