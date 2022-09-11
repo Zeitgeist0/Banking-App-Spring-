@@ -1,5 +1,6 @@
 package com.app.banking.hibernate.bankingapphibernate.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -14,18 +15,19 @@ import java.util.Set;
 @Getter
 @Setter
 public class Employer extends AbstractEntity {
-  @Column(name = "name", length = 20)
-  private String number;
-  @Column(name = "address", length = 20)
-  private String currency;
+  @Column(name = "name")
+  private String name;
+  @Column(name = "address")
+  private String address;
+  @JsonIgnore
   @ManyToMany(mappedBy = "employers")
   private Set<Customer> customers = new LinkedHashSet<>();
 
   @Override
   public String toString() {
     return "Employer{" +
-      "number='" + number + '\'' +
-      ", currency='" + currency + '\'' +
+      "number='" + name + '\'' +
+      ", currency='" + address + '\'' +
       ", customers=" + customers +
       '}';
   }

@@ -27,7 +27,6 @@ public class Customer extends AbstractEntity {
   @ManyToMany(fetch = FetchType.EAGER)
   private List<Employer> employers;
   @OneToMany(mappedBy = "customer")
-  @JsonIgnore
   private Set<Account> accounts = new LinkedHashSet<>();
 
 

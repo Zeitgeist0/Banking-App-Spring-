@@ -32,6 +32,7 @@ public class Account extends AbstractEntity {
 
   @ManyToOne(fetch = FetchType.EAGER)
   @JoinColumn(name = "customer_id")
+  @JsonIgnore
  private Customer customer;
 
   @Override

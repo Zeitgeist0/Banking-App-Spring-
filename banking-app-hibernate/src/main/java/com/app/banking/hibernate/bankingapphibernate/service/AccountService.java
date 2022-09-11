@@ -20,9 +20,7 @@ public class AccountService implements Service<Account> {
   public AccountService(HibernateAccountDao accountDao ) {
     this.accountDao = accountDao;
   }
-  public void setUserDao(HibernateCustomerDao hibernateCustomerDao) {
-    this.accountDao = accountDao;
-  }
+
 
 
 public void  update(Account account ){

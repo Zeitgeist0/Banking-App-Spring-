@@ -24,9 +24,7 @@ public class CustomerService implements Service<Customer> {
     this.customerDao = hibernateCustomerDao;
   }
 
-  public void setUserDao(Dao<Customer> dao) {
-    this.customerDao = customerDao;
-  }
+
 
 
   @Override

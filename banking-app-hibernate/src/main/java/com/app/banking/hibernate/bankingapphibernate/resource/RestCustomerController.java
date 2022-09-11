@@ -24,10 +24,6 @@ public class RestCustomerController {
     return customerService.findAll();
   }
 
-//  @GetMapping("/andAccounts")
-//  public List<Customer> getAllCustomersAndAccounts() {
-//    return customerService.findAllCustomersAndAccounts();
-//  }
 
   @PostMapping()
   public void save(@RequestBody Customer customer) {
