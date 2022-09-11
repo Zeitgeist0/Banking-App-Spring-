@@ -1,5 +1,6 @@
 package com.app.banking.hibernate.bankingapphibernate.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -26,8 +27,12 @@ public class Customer {
  private String email;
   @Column(name = "age")
  private Integer age;
-
+  @ManyToMany(fetch = FetchType.EAGER)
+  @JoinColumn(name = "employer_id")
+  @JsonIgnore
+  private List<Employer> employers;
   @OneToMany(mappedBy = "customer")
+  @JsonIgnore
   private Set<Account> accounts = new LinkedHashSet<>();
 
 

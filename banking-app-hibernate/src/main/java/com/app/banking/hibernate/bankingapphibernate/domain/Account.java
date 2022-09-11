@@ -5,6 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.UUID;
@@ -19,16 +21,20 @@ public class Account {
   @Column(name = "id", nullable = false)
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
-  @Column(name = "number", length = 20)
-  private String number;
+
+
+  @GeneratedValue
+  @Type(type="org.hibernate.type.PostgresUUIDType")
+  @Column(name = "number")
+  private UUID number = UUID.randomUUID();
+
 //  @Enumerated(EnumType.STRING)
-@Column(name = "currency", length = 20)
+@Column(name = "currency")
   private String currency;
   @Column(name = "balance")
   private Double balance;
 
   @ManyToOne(fetch = FetchType.EAGER)
-  @JsonIgnore
   @JoinColumn(name = "customer_id")
  private Customer customer;
 

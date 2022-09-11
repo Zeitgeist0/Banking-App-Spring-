@@ -1,10 +1,10 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="banking-app-1:war exploded">
-    <output-path>$PROJECT_DIR$/banking-app-1/target/banking-app-1-0.0.1-SNAPSHOT</output-path>
+  <artifact type="exploded-war" name="banking-app-jdbc:war exploded">
+    <output-path>$PROJECT_DIR$/banking-app-jdbc/target/banking-app-1-0.0.1-SNAPSHOT</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>banking-app-1</module>
+        <module>banking-app-jdbc</module>
         <packaging>war</packaging>
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
@@ -90,7 +90,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/banking-app-jdbc/target/banking-app-1-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="banking-app-1/web/Web" />
+      <element id="javaee-facet-resources" facet="banking-app-jdbc/web/Web" />
     </root>
   </artifact>
 </component>

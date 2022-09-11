@@ -3,8 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Banking app.iml" filepath="$PROJECT_DIR$/.idea/Banking app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/banking-app-1/banking-app-1.iml" filepath="$PROJECT_DIR$/banking-app-1/banking-app-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/banking-app-hibernate/banking-app-hibernate.iml" filepath="$PROJECT_DIR$/banking-app-hibernate/banking-app-hibernate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/banking-app-1/banking-app-jdbc.iml" filepath="$PROJECT_DIR$/banking-app-1/banking-app-jdbc.iml" />
     </modules>
   </component>
 </project>

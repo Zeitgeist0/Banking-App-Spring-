@@ -17,6 +17,7 @@ public class RestAccountController {
 
   @GetMapping("/all")
   public List<Account> getAll() {
+    System.out.println(org.hibernate.Version.getVersionString());
     return accountService.findAll();
   }
 
