@@ -1,7 +1,5 @@
--- DROP TABLE IF EXISTS customers_employers;
--- DROP TABLE IF EXISTS employers;
--- DROP TABLE IF EXISTS accounts;
--- DROP TABLE IF EXISTS customers;
+delete from customers;
+delete from accounts;
 INSERT INTO customers (name, age, email) VALUES
                                              ('Lucy', 21, 'abc@gmail.com'),
                                              ('John', 35, 'xyz@email.com'),

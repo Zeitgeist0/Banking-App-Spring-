@@ -16,11 +16,8 @@ import java.util.Set;
 @Table(name = "customers")
 @Getter
 @Setter
-public class Customer {
-  @Id
-  @Column(name = "id", nullable = false)
-  @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long id;
+public class Customer extends AbstractEntity {
+
   @Column(name = "name")
  private String name;
   @Column(name = "email")
@@ -28,24 +25,21 @@ public class Customer {
   @Column(name = "age")
  private Integer age;
   @ManyToMany(fetch = FetchType.EAGER)
-  @JoinColumn(name = "employer_id")
-  @JsonIgnore
   private List<Employer> employers;
   @OneToMany(mappedBy = "customer")
   @JsonIgnore
   private Set<Account> accounts = new LinkedHashSet<>();
 
 
-
-
-
   @Override
   public String toString() {
     return "Customer{" +
-      "id=" + id +
+      "id=" + this.getId() +
       ", name='" + name + '\'' +
       ", email='" + email + '\'' +
       ", age=" + age +
+      ", employers=" + employers +
+      ", accounts=" + accounts +
       '}';
   }
 }

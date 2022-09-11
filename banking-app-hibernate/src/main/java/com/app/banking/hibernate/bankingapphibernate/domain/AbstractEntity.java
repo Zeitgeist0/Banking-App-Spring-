@@ -1,11 +1,14 @@
 package com.app.banking.hibernate.bankingapphibernate.domain;
 
-import javax.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.persistence.*;
+@Getter
+@Setter
 @MappedSuperclass
 public abstract class AbstractEntity {
   @Id
-  @Column(name = "id", nullable = false)
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 }

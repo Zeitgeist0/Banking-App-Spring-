@@ -19,7 +19,7 @@
 --     id          serial not null
 --         constraint accounts_pkey
 --             primary key,
---     number       varchar,
+--     number   UUID  DEFAULT public.uuid_generate_v4() NOT NULL,
 --     currency    varchar,
 --     balance     double precision,
 --     customer_id integer
