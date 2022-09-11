@@ -19,11 +19,10 @@ import java.util.UUID;
 public class Account extends AbstractEntity {
 
 
-  @Type(type="org.hibernate.type.PostgresUUIDType")
-  @Column(name = "number", unique = true)
-  @GeneratedValue(generator = "hibernate-uuid")
-  @GenericGenerator(name = "uuid", strategy = "uuid2")
+
+  @Column(name = "number")
   private String number = UUID.randomUUID().toString();
+
 
 //  @Enumerated(EnumType.STRING)
 @Column(name = "currency")

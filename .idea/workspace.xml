@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="automatic account number UUID generation implemented">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="AbstractEntity superclass implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/AbstractEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-postgres.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-postgres.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/schema-postgres.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/schema-postgres.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +131,7 @@
       <workItem from="1662827338454" duration="2099000" />
       <workItem from="1662892542506" duration="930000" />
       <workItem from="1662893721634" duration="1370000" />
-      <workItem from="1662895780204" duration="26950000" />
+      <workItem from="1662895780204" duration="27600000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -166,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662926350640</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="AbstractEntity superclass implemented">
+      <created>1662928669806</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662928669806</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +192,7 @@
     <MESSAGE value=" dao/service/controller mapped according to hibernate" />
     <MESSAGE value=" module renamed" />
     <MESSAGE value="automatic account number UUID generation implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="automatic account number UUID generation implemented" />
+    <MESSAGE value="AbstractEntity superclass implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="AbstractEntity superclass implemented" />
   </component>
 </project>
