@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="react browser added + table with MUI implemented">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/Customer/Customer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/Customer/Customer.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +139,7 @@
       <workItem from="1662893721634" duration="1370000" />
       <workItem from="1662895780204" duration="32782000" />
       <workItem from="1662996827669" duration="8060000" />
-      <workItem from="1663177900239" duration="7223000" />
+      <workItem from="1663177900239" duration="8862000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -217,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663186678744</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode">
+      <created>1663188805514</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663188805514</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,17 +255,7 @@
     <MESSAGE value="CRUD tested + h2 configured and tested" />
     <MESSAGE value="persistence bug on setFunds method fixed" />
     <MESSAGE value="react browser added + table with MUI implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="react browser added + table with MUI implemented" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestCustomerController.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode" />
+    <option name="LAST_COMMIT_MESSAGE" value="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode" />
   </component>
 </project>

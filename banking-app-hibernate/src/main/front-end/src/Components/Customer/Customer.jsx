@@ -4,6 +4,7 @@ import React from "react";
 const Customer = ({ customer }) => {
   return (
     <div>
+      <p>Customer ID : {customer.id}</p>
       <p>
         {customer.name} , {customer.age} years old. Email : {customer.email}
       </p>
