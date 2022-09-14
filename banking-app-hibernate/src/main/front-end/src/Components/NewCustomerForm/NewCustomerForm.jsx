@@ -80,7 +80,7 @@ const NewCustomerForm = () => {
               </div>
 
               <button className="button" type="submit">
-                Checkout
+                Create
               </button>
             </div>
           </Form>
