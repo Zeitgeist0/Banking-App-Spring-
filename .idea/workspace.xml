@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="customers front-end display improved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/Customer/Customer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/Customer/Customer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/CustomerList/customerList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/CustomerList/customerList.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,7 @@
       <workItem from="1662893721634" duration="1370000" />
       <workItem from="1662895780204" duration="32782000" />
       <workItem from="1662996827669" duration="8060000" />
-      <workItem from="1663177900239" duration="8862000" />
+      <workItem from="1663177900239" duration="10673000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -225,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663188805514</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="customers front-end display improved">
+      <created>1663190228821</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1663190228821</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +264,7 @@
     <MESSAGE value="persistence bug on setFunds method fixed" />
     <MESSAGE value="react browser added + table with MUI implemented" />
     <MESSAGE value="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode" />
-    <option name="LAST_COMMIT_MESSAGE" value="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode" />
+    <MESSAGE value="customers front-end display improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="customers front-end display improved" />
   </component>
 </project>
