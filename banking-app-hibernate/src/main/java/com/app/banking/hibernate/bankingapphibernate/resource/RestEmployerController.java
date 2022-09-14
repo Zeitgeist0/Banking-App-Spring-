@@ -3,6 +3,7 @@ package com.app.banking.hibernate.bankingapphibernate.resource;
 import com.app.banking.hibernate.bankingapphibernate.domain.Customer;
 import com.app.banking.hibernate.bankingapphibernate.domain.Employer;
 import com.app.banking.hibernate.bankingapphibernate.service.EmployerService;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,9 +16,10 @@ import java.util.List;
 public class RestEmployerController {
   private final EmployerService employerService;
 
-  @GetMapping("/{id}")
-  public Employer getById(@PathVariable("id") String employerId) {
-    return employerService.getOne(Long.parseLong(employerId));
+  @GetMapping("/getById")
+  public Employer getById(@RequestBody ObjectNode objectNode) {
+    Long employerId = objectNode.get("employerId").asLong();
+    return employerService.getOne(employerId);
   }
   @GetMapping("/all")
   public List<Employer> getAll() {
@@ -35,8 +37,9 @@ public class RestEmployerController {
     employerService.update(employer);
   }
 
-  @DeleteMapping("/{id}")
-  public void deleteById(@PathVariable("id") String employerId) {
+  @DeleteMapping("/deleteById")
+  public void deleteById(@RequestBody ObjectNode objectNode) {
+    String employerId = objectNode.get("employerId").asText();
     employerService.deleteById(Long.parseLong(employerId));
   }
 }

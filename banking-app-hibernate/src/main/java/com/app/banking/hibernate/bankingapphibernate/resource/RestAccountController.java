@@ -4,6 +4,7 @@ package com.app.banking.hibernate.bankingapphibernate.resource;
 
 import com.app.banking.hibernate.bankingapphibernate.domain.Account;
 import com.app.banking.hibernate.bankingapphibernate.service.AccountService;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,15 +23,16 @@ public class RestAccountController {
     return accountService.findAll();
   }
 
-  @GetMapping("/{id}")
-  public Account getById(@PathVariable("id") String accountId) {
-
+  @GetMapping("/getById")
+  public Account getById(@RequestBody ObjectNode objectNode) {
+    String accountId = objectNode.get("accountId").asText();
     return accountService.getOne(Long.parseLong(accountId));
   }
 
-  @DeleteMapping("/{id}")
-  public void deleteById(@PathVariable("id") String accountId) {
-    accountService.deleteById(Long.parseLong(accountId));
+  @DeleteMapping("/deleteById")
+  public void deleteById(@RequestBody ObjectNode objectNode) {
+    Long accountId = objectNode.get("accountId").asLong();
+    accountService.deleteById(accountId);
   }
 
   @PostMapping()
@@ -38,21 +40,26 @@ public class RestAccountController {
 
     accountService.save(account);
   }
-
-  @PutMapping("/addFunds/{number}/{funds}")
-  public void addFunds(@PathVariable("number") String number, @PathVariable("funds") Double funds) {
-
+  @PutMapping("/addFunds")
+  public void addFunds(@RequestBody ObjectNode objectNode) {
+    String number = objectNode.get("number").asText();
+    Double funds = objectNode.get("funds").asDouble();
     accountService.addFunds(number,funds);
   }
-  @PutMapping("/withdrawFunds/{number}/{funds}")
-  public void withdrawFunds(@PathVariable("number") String number, @PathVariable("funds") Double funds) {
+
+  @PutMapping("/withdrawFunds")
+  public void withdrawFunds(@RequestBody ObjectNode objectNode) {
+    String number = objectNode.get("number").asText();
+    Double funds = objectNode.get("funds").asDouble();
     accountService.withdrawFunds(number,funds);
   }
 
   @PutMapping("/transferFunds/{fromWhere}/{toWhere}/{funds}")
-  public void transferFunds(@PathVariable("fromWhere") String fromWhere,
-                            @PathVariable("toWhere") String toWhere,
-                            @PathVariable("funds") Double funds) {
+  public void transferFunds(@RequestBody ObjectNode objectNode) {
+    String fromWhere = objectNode.get("fromWhere").asText();
+    String toWhere = objectNode.get("toWhere").asText();
+    Double funds = objectNode.get("funds").asDouble();
+
     accountService.transferFunds(fromWhere,toWhere, funds);
   }
 }

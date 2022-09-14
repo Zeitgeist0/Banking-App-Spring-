@@ -3,6 +3,7 @@ package com.app.banking.hibernate.bankingapphibernate.resource;
 
 import com.app.banking.hibernate.bankingapphibernate.domain.Customer;
 import com.app.banking.hibernate.bankingapphibernate.service.CustomerService;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,9 +16,10 @@ import java.util.List;
 public class RestCustomerController {
   private final CustomerService customerService;
 
-  @GetMapping("/{id}")
-  public Customer getById(@PathVariable("id") String userId) {
-    return customerService.getOne(Long.parseLong(userId));
+  @GetMapping("/getById")
+  public Customer getById(@RequestBody ObjectNode objectNode) {
+    Long customerId = objectNode.get("customerId").asLong();
+    return customerService.getOne(customerId);
   }
   @GetMapping("/all")
   public List<Customer> getAll() {
@@ -35,8 +37,9 @@ public class RestCustomerController {
   customerService.update(customer);
   }
 
-  @DeleteMapping("/{id}")
-  public void deleteById(@PathVariable("id") String customerId) {
+  @DeleteMapping("/deleteById")
+  public void deleteById(@RequestBody ObjectNode objectNode) {
+    String customerId = objectNode.get("customerId").asText();
     customerService.deleteById(Long.parseLong(customerId));
   }
 

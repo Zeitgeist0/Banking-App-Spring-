@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="react browser added + table with MUI implemented">
-      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/css/main.1e6047e5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/css/main.1e6047e5.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.4fbe64b1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.4fbe64b1.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.4fbe64b1.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +138,7 @@
       <workItem from="1662893721634" duration="1370000" />
       <workItem from="1662895780204" duration="32782000" />
       <workItem from="1662996827669" duration="8060000" />
-      <workItem from="1663177900239" duration="5817000" />
+      <workItem from="1663177900239" duration="7223000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -213,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663186531795</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="react browser added + table with MUI implemented">
+      <created>1663186678744</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663186678744</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
