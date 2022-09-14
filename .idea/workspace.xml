@@ -4,10 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="CRUD tested + h2 configured and tested">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="react browser added + table with MUI implemented">
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/Customer/Customer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/CustomerList/CustomerList.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/CustomerList/customerList.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/Header/Header.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/Header/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Customers.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/css/main.daf70b9d.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/css/main.daf70b9d.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.825b145c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.825b145c.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/js/main.825b145c.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/build/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/customers/fetchAllCustomers.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/customers/fetchAllCustomers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/customers/fetchAllCustomersAndAccounts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateAccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateCustomerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateCustomerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateEmployerDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateEmployerDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/EmployerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-postgres.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/resources/data-postgres.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +94,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -122,6 +152,10 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="" />
@@ -132,7 +166,9 @@
       <workItem from="1662827338454" duration="2099000" />
       <workItem from="1662892542506" duration="930000" />
       <workItem from="1662893721634" duration="1370000" />
-      <workItem from="1662895780204" duration="30843000" />
+      <workItem from="1662895780204" duration="32782000" />
+      <workItem from="1662996827669" duration="8060000" />
+      <workItem from="1663177900239" duration="5565000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -190,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662931869953</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="persistence bug on setFunds method fixed">
+      <created>1662932723095</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1662932723095</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,6 +261,19 @@
     <MESSAGE value="account number generation fixed" />
     <MESSAGE value="employers dao/service/controller added" />
     <MESSAGE value="CRUD tested + h2 configured and tested" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD tested + h2 configured and tested" />
+    <MESSAGE value="persistence bug on setFunds method fixed" />
+    <MESSAGE value="react browser added + table with MUI implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="react browser added + table with MUI implemented" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestCustomerController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

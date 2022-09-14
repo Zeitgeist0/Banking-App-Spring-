@@ -1,0 +1,26 @@
+.header-list {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 29px;
+}
+
+.header-item {
+  text-decoration: none;
+
+  color: black;
+}
+.header-item:hover {
+  color: #797979;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 35px;
+  margin-top: 30px;
+  margin-bottom: 45px;
+  text-align: center;
+}

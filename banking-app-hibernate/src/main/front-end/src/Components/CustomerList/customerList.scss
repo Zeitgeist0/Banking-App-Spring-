@@ -1,0 +1,11 @@
+.customers-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px;
+  list-style-type: none;
+}
+
+.customer {
+  margin-right: 150px;
+  margin-bottom: 75px;
+}

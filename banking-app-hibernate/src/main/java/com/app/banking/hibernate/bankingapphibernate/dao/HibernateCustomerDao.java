@@ -16,6 +16,7 @@ import javax.persistence.PersistenceUnit;
 import java.util.List;
 
 @Repository
+
 public class HibernateCustomerDao implements Dao<Customer> {
   @PersistenceUnit
   private EntityManagerFactory entityManagerFactory;

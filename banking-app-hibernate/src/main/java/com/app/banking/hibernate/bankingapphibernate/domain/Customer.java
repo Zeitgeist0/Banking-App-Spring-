@@ -1,6 +1,8 @@
 package com.app.banking.hibernate.bankingapphibernate.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,9 +26,11 @@ public class Customer extends AbstractEntity {
  private String email;
   @Column(name = "age")
  private Integer age;
+ @JsonIgnore
   @ManyToMany(fetch = FetchType.EAGER)
   private List<Employer> employers;
-  @OneToMany(mappedBy = "customer")
+ @JsonManagedReference
+  @OneToMany(mappedBy = "customer" ,  cascade = CascadeType.ALL,  orphanRemoval = true,fetch = FetchType.EAGER)
   private Set<Account> accounts = new LinkedHashSet<>();
 
 

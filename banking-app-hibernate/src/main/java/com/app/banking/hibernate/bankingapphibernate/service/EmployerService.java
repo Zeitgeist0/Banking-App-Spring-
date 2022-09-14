@@ -6,9 +6,11 @@ import com.app.banking.hibernate.bankingapphibernate.dao.HibernateEmployerDao;
 import com.app.banking.hibernate.bankingapphibernate.domain.Customer;
 import com.app.banking.hibernate.bankingapphibernate.domain.Employer;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 @Repository
+@Transactional
 public class EmployerService implements Service<Employer> {
   private HibernateEmployerDao employerDao;
 

@@ -4,6 +4,7 @@ import com.app.banking.hibernate.bankingapphibernate.domain.Customer;
 import com.app.banking.hibernate.bankingapphibernate.domain.Employer;
 import org.hibernate.HibernateException;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

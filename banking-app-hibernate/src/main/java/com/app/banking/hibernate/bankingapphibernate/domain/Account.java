@@ -1,6 +1,8 @@
 package com.app.banking.hibernate.bankingapphibernate.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,8 +20,6 @@ import java.util.UUID;
 @Setter
 public class Account extends AbstractEntity {
 
-
-
   @Column(name = "number")
   private String number = UUID.randomUUID().toString();
 
@@ -30,9 +30,9 @@ public class Account extends AbstractEntity {
   @Column(name = "balance")
   private Double balance;
 
-  @ManyToOne(fetch = FetchType.EAGER)
+  @ManyToOne
   @JoinColumn(name = "customer_id")
-  @JsonIgnore
+  @JsonBackReference
  private Customer customer;
 
   @Override
@@ -42,7 +42,7 @@ public class Account extends AbstractEntity {
       ", number=" + number +
       ", currency='" + currency + '\'' +
       ", balance=" + balance +
-      ", customer=" + customer +
+//      ", customer=" + customer +
       '}';
   }
 }

@@ -15,6 +15,7 @@ import javax.persistence.PersistenceUnit;
 import java.util.List;
 
 @Repository
+
 public class HibernateAccountDao implements Dao<Account> {
 
   @PersistenceUnit
