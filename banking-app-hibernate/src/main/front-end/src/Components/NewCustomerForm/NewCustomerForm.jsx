@@ -79,7 +79,7 @@ const NewCustomerForm = () => {
                 />
               </div>
 
-              <button className="button" type="submit">
+              <button className="form-button" type="submit">
                 Create
               </button>
             </div>

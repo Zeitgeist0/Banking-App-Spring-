@@ -5,7 +5,8 @@ import React from "react";
 import fetchAllCustomers from "API/customers/fetchAllCustomers";
 import Header from "Components/Header/Header";
 import CustomerList from "Components/CustomerList/CustomerList";
-import NewCustomerForm from "Components/NewCustomerForm/NewCustomerForm";
+
+import { Management } from "Pages/Management";
 
 function App() {
   const [customers, setCustomers] = useState([]);
@@ -27,7 +28,7 @@ function App() {
             element={<CustomerList customers={customers} />}
           />
 
-          <Route path="/management/*" element={<NewCustomerForm />} />
+          <Route path="/management/*" element={<Management />} />
         </Routes>
       </main>
     </>
