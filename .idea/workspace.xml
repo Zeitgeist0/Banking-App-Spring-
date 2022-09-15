@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="management styles updated, components updated">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/accounts/fetchAccounts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/NewCustomerForm/NewCustomerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/NewCustomerForm/NewCustomerForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Customers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Customers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Management.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Management.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateAccountDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/EmployerService.java" afterDir="false" />
-    </list>
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment=" database and controller bugs fixed, account functionality added to front-end" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +136,7 @@
       <workItem from="1662895780204" duration="32782000" />
       <workItem from="1662996827669" duration="8060000" />
       <workItem from="1663177900239" duration="11576000" />
-      <workItem from="1663254686101" duration="9368000" />
+      <workItem from="1663254686101" duration="9999000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -263,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663268599421</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary=" database and controller bugs fixed, account functionality added to front-end">
+      <created>1663276137992</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1663276137992</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +292,7 @@
     <MESSAGE value="added UI to create new customers" />
     <MESSAGE value="button renamed" />
     <MESSAGE value="management styles updated, components updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="management styles updated, components updated" />
+    <MESSAGE value=" database and controller bugs fixed, account functionality added to front-end" />
+    <option name="LAST_COMMIT_MESSAGE" value=" database and controller bugs fixed, account functionality added to front-end" />
   </component>
 </project>
