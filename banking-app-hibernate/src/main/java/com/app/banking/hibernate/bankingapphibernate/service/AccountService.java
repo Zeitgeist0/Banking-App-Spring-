@@ -47,6 +47,7 @@ accountDao.deleteAll(accounts);
     accountDao.saveAll(accounts);
   }
 
+  @Transactional(readOnly = true)
 public Account getByNumber (String number) {
     return accountDao.getByNumber(number);
 }
@@ -80,6 +81,13 @@ public void addFunds (String number , Double funds) {
       accountDao.setFunds(fromWhere , fromWhichAccount.getBalance() - funds);
       accountDao.setFunds(toWhere, toWhichAccount.getBalance() + funds);
     }
+  }
+
+  public void deleteByNumber (String number) {
+    Long accountId = getByNumber(number).getId();
+
+    accountDao.deleteById(accountId);
+
   }
   @Override
   @Transactional(readOnly = true)

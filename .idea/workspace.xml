@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="button renamed">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="management styles updated, components updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/API/accounts/fetchAccounts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/NewCustomerForm/NewCustomerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Components/NewCustomerForm/NewCustomerForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Customers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Customers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Management.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/front-end/src/Pages/Management.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/dao/HibernateAccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/resource/RestAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-hibernate/src/main/java/com/app/banking/hibernate/bankingapphibernate/service/EmployerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +149,7 @@
       <workItem from="1662895780204" duration="32782000" />
       <workItem from="1662996827669" duration="8060000" />
       <workItem from="1663177900239" duration="11576000" />
-      <workItem from="1663254686101" duration="3164000" />
+      <workItem from="1663254686101" duration="9368000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -245,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663192817836</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="management styles updated, components updated">
+      <created>1663268599421</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663268599421</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,6 +297,7 @@
     <MESSAGE value="customers front-end display improved" />
     <MESSAGE value="added UI to create new customers" />
     <MESSAGE value="button renamed" />
-    <option name="LAST_COMMIT_MESSAGE" value="button renamed" />
+    <MESSAGE value="management styles updated, components updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="management styles updated, components updated" />
   </component>
 </project>

@@ -34,7 +34,11 @@ public class RestAccountController {
     Long accountId = objectNode.get("accountId").asLong();
     accountService.deleteById(accountId);
   }
-
+  @DeleteMapping("/deleteByNumber")
+  public void deleteByNumber(@RequestBody ObjectNode objectNode) {
+    String accountNumber = objectNode.get("accountNumber").asText();
+    accountService.deleteByNumber(accountNumber);
+  }
   @PostMapping()
   public void save(@RequestBody Account account) {
 

@@ -60,6 +60,7 @@ public void update (Customer customer) {
 //  }
 
   @Override
+  @Transactional(readOnly = true)
   public List<Customer> findAll () {
     return customerDao.findAll();
   }
@@ -70,6 +71,7 @@ public void update (Customer customer) {
   }
 
   @Override
+  @Transactional(readOnly = true)
   public Customer getOne(long id) {
 
 //     List<Account> customerAccounts = accountDao.getByCustomerId(id);

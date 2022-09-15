@@ -30,7 +30,7 @@ public class Customer extends AbstractEntity {
   @ManyToMany(fetch = FetchType.EAGER)
   private List<Employer> employers;
  @JsonManagedReference
-  @OneToMany(mappedBy = "customer" ,  cascade = CascadeType.ALL,  orphanRemoval = true,fetch = FetchType.EAGER)
+  @OneToMany(mappedBy = "customer" ,  orphanRemoval = true ,fetch = FetchType.EAGER)
   private Set<Account> accounts = new LinkedHashSet<>();
 
 

@@ -40,6 +40,7 @@ employerDao.saveAll(employers);
   }
 
   @Override
+  @Transactional(readOnly = true)
   public List<Employer> findAll() {
     return employerDao.findAll();
   }
@@ -50,6 +51,7 @@ employerDao.saveAll(employers);
   }
 
   @Override
+  @Transactional(readOnly = true)
   public Employer getOne(long id) {
     return employerDao.getOne(id);
   }

@@ -8,25 +8,16 @@ import CustomerList from "Components/CustomerList/CustomerList";
 
 import { Management } from "Pages/Management";
 
+import Customers from "./Pages/Customers";
+
 function App() {
-  const [customers, setCustomers] = useState([]);
-
-  useEffect(() => {
-    fetchAllCustomers().then((customers) => {
-      setCustomers(customers);
-    });
-  }, []);
-
   return (
     <>
       <Header />
 
       <main>
         <Routes>
-          <Route
-            path="/customers/*"
-            element={<CustomerList customers={customers} />}
-          />
+          <Route path="/customers/*" element={<Customers />} />
 
           <Route path="/management/*" element={<Management />} />
         </Routes>

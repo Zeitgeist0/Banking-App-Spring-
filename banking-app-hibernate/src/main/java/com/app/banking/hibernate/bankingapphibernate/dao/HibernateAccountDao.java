@@ -34,6 +34,7 @@ public class HibernateAccountDao implements Dao<Account> {
     EntityManager entityManager = entityManagerFactory.createEntityManager();
     Account account = entityManager.find(Account.class, id);
     try {
+
       EntityTransaction transaction = entityManager.getTransaction();
       transaction.begin();
       entityManager.remove(account);

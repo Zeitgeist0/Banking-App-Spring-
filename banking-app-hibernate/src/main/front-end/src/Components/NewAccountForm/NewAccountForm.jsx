@@ -1,34 +1,38 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import "./newCustomerForm.scss";
+
 import { useDispatch, useSelector } from "react-redux";
-import createNewCustomer from "API/customers/createNewCustomer";
+import createNewAccount from "API/accounts/createNewAccount";
 
 const FormSchema = Yup.object({
-  name: Yup.string().required("Name is required"),
-  email: Yup.string().required("Email is required"),
-  age: Yup.number()
-    .typeError("Please enter a number")
-    .required("Age is required")
+  currency: Yup.string().required("Currency is required"),
+  balance: Yup.number()
+    .typeError("Please enter a balance")
+    .required("Balance is required")
+    .positive()
+    .integer(),
+  customerId: Yup.number()
+    .typeError("Please enter a customer ID")
+    .required("Customer ID is required")
     .positive()
     .integer(),
 });
 
-const NewCustomerForm = () => {
+const NewAccountForm = () => {
   const handleFormSubmit = (values, { resetForm }) => {
-    const { name, email, age } = values;
-    createNewCustomer(name, age, email);
+    const { currency, balance, customerId } = values;
+    createNewAccount(currency, balance, customerId);
     resetForm();
   };
   return (
     <>
-      <h2 className="checkout-header">Create a new customer</h2>
+      <h2 className="checkout-header">Create a new account</h2>
       <Formik
         initialValues={{
-          name: "",
-          email: "",
-          age: "",
+          currency: "",
+          balance: "",
+          customerId: "",
         }}
         validationSchema={FormSchema}
         onSubmit={handleFormSubmit}
@@ -37,45 +41,45 @@ const NewCustomerForm = () => {
           <Form className="checkout-form">
             <div className="form-container">
               <div className="form-list-item">
-                <label htmlFor="name">Name</label>
+                <label htmlFor="name">Currency</label>
                 <Field
                   className="form-field"
-                  name="name"
-                  type="name"
-                  placeholder="Name"
+                  name="currency"
+                  type="currency"
+                  placeholder="Currency"
                 />
                 <ErrorMessage
                   component="div"
                   className="error-message"
-                  name="name"
+                  name="currency"
                 />
               </div>
               <div className="form-list-item">
-                <label htmlFor="name">Email</label>
+                <label htmlFor="name">Balance</label>
                 <Field
-                  name="email"
-                  type="email"
-                  placeholder="Email"
+                  name="balance"
+                  type="balance"
+                  placeholder="Balance"
                   className="form-field"
                 />
                 <ErrorMessage
                   className="error-message"
                   component="div"
-                  name="email"
+                  name="balance"
                 />
               </div>
               <div className="form-list-item">
-                <label htmlFor="name">Age</label>
+                <label htmlFor="name">Customer ID</label>
                 <Field
-                  name="age"
-                  type="age"
-                  placeholder="Age"
+                  name="customerId"
+                  type="customerId"
+                  placeholder="Customer ID"
                   className="form-field"
                 />
                 <ErrorMessage
                   className="error-message"
                   component="div"
-                  name="age"
+                  name="customerId"
                 />
               </div>
 
@@ -90,4 +94,4 @@ const NewCustomerForm = () => {
   );
 };
 
-export default NewCustomerForm;
+export default NewAccountForm;
