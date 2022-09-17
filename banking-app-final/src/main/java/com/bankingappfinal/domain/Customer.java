@@ -32,23 +32,22 @@ public class Customer extends AbstractEntity {
  private String email;
   @Column(name = "age")
  private Integer age;
-
+@Column(name = "phone_number")
+private String phoneNumber;
   @ManyToMany(fetch = FetchType.LAZY)
-  private List<Employer> employers;
+  private Set<Employer> employers;
 
   @OneToMany(mappedBy = "customer" ,  orphanRemoval = true ,fetch = FetchType.LAZY , cascade = CascadeType.ALL)
   private Set<Account> accounts = new LinkedHashSet<>();
 
 
-  @Override
-  public String toString() {
-    return "Customer{" +
-      "id=" + this.getId() +
-      ", name='" + name + '\'' +
-      ", email='" + email + '\'' +
-      ", age=" + age +
-//      ", employers=" + employers +
-//      ", accounts=" + accounts +
-      '}';
-  }
+ @Override
+ public String toString() {
+  return "Customer{" +
+    "name='" + name + '\'' +
+    ", email='" + email + '\'' +
+    ", age=" + age +
+    ", phoneNumber='" + phoneNumber + '\'' +
+    '}';
+ }
 }

@@ -8,11 +8,12 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public interface AccountJpaRepository extends JpaRepository<Account, Integer>, JpaSpecificationExecutor<Account> {
 
   @EntityGraph("accountsFull")
-  List<Account> findAccountsByCustomerId(Integer id);
+  Set<Account> findAccountsByCustomerId(Integer id);
   @EntityGraph("accountsFull")
   Optional<Account> findAccountByNumber(String accountNumber);
 

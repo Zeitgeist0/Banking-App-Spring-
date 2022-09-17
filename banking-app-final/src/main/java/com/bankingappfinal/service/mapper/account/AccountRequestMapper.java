@@ -29,8 +29,8 @@ public class AccountRequestMapper  extends DtoMapperFacade<Account, AccountReque
   Integer customerId = dto.getCustomerId();
     Optional<Customer> customer = customerService.findById(customerId);
    customer.ifPresent(entity::setCustomer);
-   entity.setNumber(UUID.randomUUID().toString());
-   entity.setCreationDate(new Date());
+
+
   }
 
 }

@@ -13,6 +13,8 @@ import lombok.Setter;
 import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.UUID;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -25,7 +27,7 @@ public class AccountRequestDto {
   @Size(min = 3, message = "Currency must have 3 letters")
   private String currency;
   @NotNull
-  private String number;
+  private String number = UUID.randomUUID().toString();
   @NotNull
   @Min(value = 0L, message = "The value must be positive")
   private Double balance;

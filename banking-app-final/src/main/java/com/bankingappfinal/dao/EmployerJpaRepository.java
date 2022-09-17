@@ -14,4 +14,8 @@ public interface EmployerJpaRepository extends JpaRepository<Employer, Integer>,
 
   @EntityGraph("employersFull")
   List<Employer> findEmployersByCustomers (Customer customer);
+
+  @EntityGraph("employersFull")
+  Set<Employer> findEmployersById(Set<Integer> employersIds);
+
 }

@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @RequiredArgsConstructor
 @org.springframework.stereotype.Service
@@ -50,5 +51,9 @@ customerJpaRepository.deleteById(id);
   @Override
   public void deleteAll(List<Customer> customers) {
  customerJpaRepository.deleteAll(customers);
+  }
+
+  public Set<Customer> findCustomersById (Set<Integer> customerIds) {
+    return customerJpaRepository.findCustomersById(customerIds);
   }
 }

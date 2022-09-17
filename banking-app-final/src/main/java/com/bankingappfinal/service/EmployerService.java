@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 @RequiredArgsConstructor
 @org.springframework.stereotype.Service
@@ -50,4 +51,10 @@ public class EmployerService implements Service<Employer> {
   public void deleteAll(List<Employer> employer) {
     employerJpaRepository.deleteAll(employer);
   }
-}
+
+  public Set<Employer> findEmployersById (Set<Integer> employersIds) {
+  return   employerJpaRepository.findEmployersById(employersIds);
+  }
+
+
+ }

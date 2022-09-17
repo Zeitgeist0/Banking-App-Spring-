@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="toString modified/nested exception bug resolved. Add funds method bugs resolved">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="auditing enabled">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/employer/EmployerRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/employer/EmployerResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/customer/CustomerRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/customer/CustomerResponseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/employer/EmployerRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/employer/EmployerResponseMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/AbstractEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/account/AccountRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/account/AccountRequestMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +176,7 @@
       <workItem from="1663177900239" duration="11576000" />
       <workItem from="1663254686101" duration="10289000" />
       <workItem from="1663344587051" duration="5562000" />
-      <workItem from="1663350860036" duration="22608000" />
+      <workItem from="1663350860036" duration="30282000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -325,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663433386622</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="auditing enabled">
+      <created>1663434099837</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663434099837</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,6 +379,7 @@
     <MESSAGE value="Spring Data dao/service/controller added" />
     <MESSAGE value="account request/response dto added, all Id's changed to Integer type" />
     <MESSAGE value="toString modified/nested exception bug resolved. Add funds method bugs resolved" />
-    <option name="LAST_COMMIT_MESSAGE" value="toString modified/nested exception bug resolved. Add funds method bugs resolved" />
+    <MESSAGE value="auditing enabled" />
+    <option name="LAST_COMMIT_MESSAGE" value="auditing enabled" />
   </component>
 </project>
