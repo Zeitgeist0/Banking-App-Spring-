@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/banking-app-final" />
     <file type="web" url="file://$PROJECT_DIR$/banking-app-hibernate" />
     <file type="web" url="file://$PROJECT_DIR$/banking-app-jdbc" />
   </component>
@@ -10,6 +11,7 @@
         <option value="$PROJECT_DIR$/banking-app-1/pom.xml" />
         <option value="$PROJECT_DIR$/banking-app-hibernate/pom.xml" />
         <option value="$PROJECT_DIR$/banking-app-jdbc/pom.xml" />
+        <option value="$PROJECT_DIR$/banking-app-final/pom.xml" />
       </list>
     </option>
   </component>

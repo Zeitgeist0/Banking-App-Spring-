@@ -1,0 +1,58 @@
+.error-message {
+  color: red;
+  padding-top: 5px;
+}
+
+.checkout-header {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.form-list-item {
+  padding-bottom: 8px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.form-field {
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-button {
+  transition-duration: 0.4s;
+  border-radius: 20px;
+  // background-color: white;
+  padding: 10px;
+  cursor: pointer;
+  // border: none;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
