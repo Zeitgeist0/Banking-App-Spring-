@@ -1,4 +1,4 @@
-INSERT INTO customers (name, age, email) VALUES
+INSERT INTO customers (name,  age, email) VALUES
                                              ('Lucy', 21, 'abc@gmail.com'),
                                              ('John', 35, 'xyz@email.com'),
                                              ('Alfred', 65, 'tst@outlook.com'),

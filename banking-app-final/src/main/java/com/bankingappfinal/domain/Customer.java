@@ -26,6 +26,8 @@ public class Customer extends AbstractEntity {
 
   @Column(name = "name")
  private String name;
+  @Column(name = "password")
+  private String password;
   @Column(name = "email")
  private String email;
   @Column(name = "age")

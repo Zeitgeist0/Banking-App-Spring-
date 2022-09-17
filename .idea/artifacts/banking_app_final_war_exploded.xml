@@ -94,6 +94,7 @@
           <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.2" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.22" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.36" />
+          <element id="library" level="project" name="Maven: org.modelmapper:modelmapper:2.4.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">

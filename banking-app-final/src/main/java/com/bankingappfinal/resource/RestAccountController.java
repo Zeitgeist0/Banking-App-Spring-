@@ -4,13 +4,18 @@ package com.bankingappfinal.resource;
 
 
 import com.bankingappfinal.domain.Account;
+import com.bankingappfinal.domain.dto.account.AccountRequestDto;
+import com.bankingappfinal.domain.dto.account.AccountResponseDto;
 import com.bankingappfinal.service.AccountService;
+import com.bankingappfinal.service.mapper.account.AccountRequestMapper;
+import com.bankingappfinal.service.mapper.account.AccountResponseMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
@@ -18,17 +23,20 @@ import java.util.Optional;
 @CrossOrigin(origins = {"http://localhost:3000"})
 public class RestAccountController {
   private final AccountService accountService;
-
+private final AccountResponseMapper accountResponseMapper;
+private final AccountRequestMapper accountRequestMapper;
   @GetMapping("/all")
-  public List<Account> getAll() {
-    System.out.println(org.hibernate.Version.getVersionString());
-    return accountService.findAll();
+  public List<AccountResponseDto> getAll() {
+    return accountService.findAll().stream().
+    map(accountResponseMapper::convertToDto).
+      collect(Collectors.toList());
   }
 
   @GetMapping("/getById")
-  public Optional<Account> getById(@RequestBody ObjectNode objectNode) {
+  public Optional<AccountResponseDto> getById(@RequestBody ObjectNode objectNode) {
     Integer accountId = objectNode.get("accountId").asInt();
-    return accountService.findById(accountId);
+    return  accountService.findById(accountId).map(accountResponseMapper::convertToDto);
+
   }
 
   @DeleteMapping("/deleteById")
@@ -42,9 +50,9 @@ public class RestAccountController {
     accountService.deleteByNumber(accountNumber);
   }
   @PostMapping()
-  public void save(@RequestBody Account account) {
-
-    accountService.save(account);
+  public void save(@RequestBody AccountRequestDto account) {
+ Account newAccount = accountRequestMapper.convertToEntity(account);
+    accountService.save(newAccount);
   }
   @PutMapping("/addFunds")
   public void addFunds(@RequestBody ObjectNode objectNode) {

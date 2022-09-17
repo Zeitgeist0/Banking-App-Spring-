@@ -4,114 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="project built and compiled into WAR file">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_zerodep_3_2_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_193.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_8_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_4_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_17_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_rnorth_duct_tape_duct_tape_1_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_websocket_2_7_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_jdbc_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_3_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_websocket_5_3_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testcontainers_testcontainers_1_16_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-1/banking-app-jdbc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/asset-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.d86da261.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.d86da261.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/787.22edae46.chunk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/787.22edae46.chunk.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.ba3f2f50.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.ba3f2f50.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.ba3f2f50.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/public/logo192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/public/logo512.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/public/manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/deleteAccount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/customers/createNewCustomer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/customers/fetchAllCustomers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Customer/Customer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/CustomerList/CustomerList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/CustomerList/customerList.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/DeleteAccountForm/DeleteAccountForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewAccountForm/NewAccountForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewCustomerForm/NewCustomerForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewCustomerForm/newCustomerForm.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/Customers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/Management.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/customers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/management.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/reportWebVitals.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/setupTests.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/BankingAppFinalApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/ServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/AccountJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/EmployerJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/AbstractEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Currency.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Employer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-postgres.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/BankingAppFinalApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="Spring Data dao/service/controller added">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/CustomDateSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/DtoMapperFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/account/AccountRequestMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/account/AccountResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/AccountJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/AccountJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerJpaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +73,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DatabaseDriversLRU" value="postgresql&#10;h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -190,6 +99,9 @@
       <recent name="C:\Users\zeitg\OneDrive\Desktop\DanIT - FS\Banking app\banking-app-final\src\main\resources" />
       <recent name="C:\Users\zeitg\OneDrive\Desktop\DanIT - FS\Banking app\banking-app-hibernate\src\main\resources" />
       <recent name="C:\Users\zeitg\OneDrive\Desktop\DanIT - FS\Banking app\banking-app-hibernate\src\main\java\com\app\banking\hibernate\bankingapphibernate" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bankingappfinal.resource" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -269,7 +181,7 @@
       <workItem from="1663177900239" duration="11576000" />
       <workItem from="1663254686101" duration="10289000" />
       <workItem from="1663344587051" duration="5562000" />
-      <workItem from="1663350860036" duration="12600000" />
+      <workItem from="1663350860036" duration="20659000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -397,7 +309,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663276443439</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Spring Data dao/service/controller added">
+      <created>1663423859131</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663423859131</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Spring Data dao/service/controller added">
+      <created>1663423949070</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663423949070</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -434,6 +360,7 @@
     <MESSAGE value="management styles updated, components updated" />
     <MESSAGE value=" database and controller bugs fixed, account functionality added to front-end" />
     <MESSAGE value="project built and compiled into WAR file" />
-    <option name="LAST_COMMIT_MESSAGE" value="project built and compiled into WAR file" />
+    <MESSAGE value="Spring Data dao/service/controller added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Data dao/service/controller added" />
   </component>
 </project>

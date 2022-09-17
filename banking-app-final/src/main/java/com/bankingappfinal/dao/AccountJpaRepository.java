@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface AccountJpaRepository extends JpaRepository<Account, Integer>, JpaSpecificationExecutor<Account> {
 
   @EntityGraph("accountsFull")
-  List<Account> findAccountsByCustomerId(Long id);
+  List<Account> findAccountsByCustomerId(Integer id);
   @EntityGraph("accountsFull")
   Optional<Account> findAccountByNumber(String accountNumber);
 
