@@ -4,23 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="Spring Data dao/service/controller added">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/CustomDateSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/DtoMapperFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/account/AccountRequestMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/account/AccountResponseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="account request/response dto added, all Id's changed to Integer type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/AccountJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/AccountJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/AbstractEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/AbstractEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +71,6 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal" />
@@ -181,7 +171,7 @@
       <workItem from="1663177900239" duration="11576000" />
       <workItem from="1663254686101" duration="10289000" />
       <workItem from="1663344587051" duration="5562000" />
-      <workItem from="1663350860036" duration="20659000" />
+      <workItem from="1663350860036" duration="21966000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -323,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663423949070</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="account request/response dto added, all Id's changed to Integer type">
+      <created>1663431919998</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663431919998</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,6 +358,7 @@
     <MESSAGE value=" database and controller bugs fixed, account functionality added to front-end" />
     <MESSAGE value="project built and compiled into WAR file" />
     <MESSAGE value="Spring Data dao/service/controller added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Data dao/service/controller added" />
+    <MESSAGE value="account request/response dto added, all Id's changed to Integer type" />
+    <option name="LAST_COMMIT_MESSAGE" value="account request/response dto added, all Id's changed to Integer type" />
   </component>
 </project>

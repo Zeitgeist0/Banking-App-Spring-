@@ -70,10 +70,10 @@ private final AccountRequestMapper accountRequestMapper;
 
   @PutMapping("/transferFunds")
   public void transferFunds(@RequestBody ObjectNode objectNode) {
-    String fromWhere = objectNode.get("fromWhere").asText();
-    String toWhere = objectNode.get("toWhere").asText();
+    String originAccountNumber = objectNode.get("originAccountNumber").asText();
+    String destinationAccountNumber = objectNode.get("destinationAccountNumber").asText();
     Double funds = objectNode.get("funds").asDouble();
 
-    accountService.transferFunds(fromWhere,toWhere, funds);
+    accountService.transferFunds(originAccountNumber,destinationAccountNumber, funds);
   }
 }

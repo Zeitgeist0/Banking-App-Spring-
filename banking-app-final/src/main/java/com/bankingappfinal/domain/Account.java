@@ -44,7 +44,7 @@ public class Account extends AbstractEntity {
       ", number=" + number +
       ", currency='" + currency + '\'' +
       ", balance=" + balance +
-     ", customer=" + customer +
+//     ", customer=" + customer +
       '}';
   }
 }

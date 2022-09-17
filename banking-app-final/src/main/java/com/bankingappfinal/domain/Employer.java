@@ -35,7 +35,7 @@ public class Employer extends AbstractEntity {
       "id=" + this.getId() +
       "number='" + name + '\'' +
       ", currency='" + address + '\'' +
-      ", customers=" + customers +
+//      ", customers=" + customers +
       '}';
   }
 }

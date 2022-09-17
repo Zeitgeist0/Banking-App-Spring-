@@ -39,5 +39,16 @@ public class AccountResponseDto {
   @JsonSerialize(using = CustomDateSerializer.class)
   private Date modifiedOn;
 
-
+  @Override
+  public String toString() {
+    return "AccountResponseDto{" +
+      "id=" + id +
+      ", currency='" + currency + '\'' +
+      ", number='" + number + '\'' +
+      ", balance=" + balance +
+      ", customerId=" + customerId +
+      ", createdOn=" + createdOn +
+      ", modifiedOn=" + modifiedOn +
+      '}';
+  }
 }

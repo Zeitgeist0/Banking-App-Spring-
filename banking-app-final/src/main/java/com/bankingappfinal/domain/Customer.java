@@ -47,8 +47,8 @@ public class Customer extends AbstractEntity {
       ", name='" + name + '\'' +
       ", email='" + email + '\'' +
       ", age=" + age +
-      ", employers=" + employers +
-      ", accounts=" + accounts +
+//      ", employers=" + employers +
+//      ", accounts=" + accounts +
       '}';
   }
 }
