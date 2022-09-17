@@ -22,10 +22,10 @@ public abstract class AbstractEntity {
 
   @CreatedDate
   @Temporal(TIMESTAMP)
-  protected Date createdOn;
+  protected Date creationDate;
 
   @LastModifiedDate
   @Temporal(TIMESTAMP)
-  protected Date modifiedOn;
+  protected Date lastModifiedDate;
 
 }

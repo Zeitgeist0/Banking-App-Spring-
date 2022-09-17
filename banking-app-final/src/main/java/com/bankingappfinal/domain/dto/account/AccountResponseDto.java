@@ -34,10 +34,10 @@ public class AccountResponseDto {
   private Integer customerId;
 
   @JsonSerialize(using = CustomDateSerializer.class)
-  private Date createdOn;
+  private Date creationDate;
 
   @JsonSerialize(using = CustomDateSerializer.class)
-  private Date modifiedOn;
+  private Date lastModifiedDate;
 
   @Override
   public String toString() {
@@ -47,8 +47,8 @@ public class AccountResponseDto {
       ", number='" + number + '\'' +
       ", balance=" + balance +
       ", customerId=" + customerId +
-      ", createdOn=" + createdOn +
-      ", modifiedOn=" + modifiedOn +
+      ", createdOn=" + creationDate +
+      ", modifiedOn=" + lastModifiedDate +
       '}';
   }
 }

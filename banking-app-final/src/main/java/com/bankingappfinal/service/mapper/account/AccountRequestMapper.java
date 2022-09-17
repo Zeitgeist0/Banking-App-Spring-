@@ -30,7 +30,7 @@ public class AccountRequestMapper  extends DtoMapperFacade<Account, AccountReque
     Optional<Customer> customer = customerService.findById(customerId);
    customer.ifPresent(entity::setCustomer);
    entity.setNumber(UUID.randomUUID().toString());
-   entity.setCreatedOn(new Date());
+   entity.setCreationDate(new Date());
   }
 
 }
