@@ -3,13 +3,18 @@ package com.bankingappfinal.resource;
 
 
 import com.bankingappfinal.domain.Customer;
+import com.bankingappfinal.domain.dto.customer.CustomerRequestDto;
+import com.bankingappfinal.domain.dto.customer.CustomerResponseDto;
 import com.bankingappfinal.service.CustomerService;
+import com.bankingappfinal.service.mapper.customer.CustomerRequestMapper;
+import com.bankingappfinal.service.mapper.customer.CustomerResponseMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
@@ -17,21 +22,24 @@ import java.util.Optional;
 @CrossOrigin(origins = {"http://localhost:3000"})
 public class RestCustomerController {
   private final CustomerService customerService;
+  private final CustomerResponseMapper customerResponseMapper;
+  private final CustomerRequestMapper customerRequestMapper;
 
   @GetMapping("/getById")
-  public Optional<Customer> getById(@RequestBody ObjectNode objectNode) {
+  public Optional<CustomerResponseDto> getById(@RequestBody ObjectNode objectNode) {
     Integer customerId = objectNode.get("customerId").asInt();
-    return customerService.findById(customerId);
+    return customerService.findById(customerId).map(customerResponseMapper::convertToDto);
   }
   @GetMapping("/all")
-  public List<Customer> getAll() {
-    return customerService.findAll();
+  public List<CustomerResponseDto> getAll() {
+    return customerService.findAll().stream().map(customerResponseMapper::convertToDto).collect(Collectors.toList());
   }
 
 
   @PostMapping()
-  public void save(@RequestBody Customer customer) {
-    customerService.save(customer);
+  public void save(@RequestBody CustomerRequestDto customer) {
+    Customer newCustomer = customerRequestMapper.convertToEntity(customer);
+    customerService.save(newCustomer);
   }
 
 

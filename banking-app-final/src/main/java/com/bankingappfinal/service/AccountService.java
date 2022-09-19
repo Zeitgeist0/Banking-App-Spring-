@@ -4,6 +4,7 @@ package com.bankingappfinal.service;
 
 import com.bankingappfinal.dao.AccountJpaRepository;
 import com.bankingappfinal.domain.Account;
+import com.bankingappfinal.domain.Customer;
 import lombok.RequiredArgsConstructor;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -90,4 +91,6 @@ accountJpaRepository.deleteById(id);
   public void deleteAll(List<Account> accounts) {
 accountJpaRepository.deleteAll(accounts);
   }
+
+
 }

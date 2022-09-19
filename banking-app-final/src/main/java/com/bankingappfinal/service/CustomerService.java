@@ -53,7 +53,7 @@ customerJpaRepository.deleteById(id);
  customerJpaRepository.deleteAll(customers);
   }
 
-  public Set<Customer> findCustomersById (Set<Integer> customerIds) {
-    return customerJpaRepository.findCustomersById(customerIds);
+  public Set<Customer> findAllByEmployersIdIn (Set<Integer> employersId) {
+    return customerJpaRepository.findAllByEmployersIdIn(employersId);
   }
 }

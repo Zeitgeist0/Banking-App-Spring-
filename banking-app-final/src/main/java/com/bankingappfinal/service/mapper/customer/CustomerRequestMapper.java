@@ -33,7 +33,7 @@ public class CustomerRequestMapper extends DtoMapperFacade<Customer, CustomerReq
   @Override
   protected void decorateEntity(Customer entity, CustomerRequestDto dto) {
     Set<Integer> employerIds = dto.getEmployerIds();
-    Set<Employer> employers = employerService.findEmployersById(employerIds);
+    Set<Employer> employers = employerService.findAllByIdIn(employerIds);
     entity.setEmployers(employers);
 
   }

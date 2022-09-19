@@ -7,15 +7,17 @@ import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
+import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
 public interface EmployerJpaRepository extends JpaRepository<Employer, Integer>, JpaSpecificationExecutor<Employer> {
 
-  @EntityGraph("employersFull")
-  List<Employer> findEmployersByCustomers (Customer customer);
 
   @EntityGraph("employersFull")
-  Set<Employer> findEmployersById(Set<Integer> employersIds);
+  Set<Employer> findAllByCustomersIn(Set<Customer> customers);
+
+  @EntityGraph("employersFull")
+  Set<Employer> findAllByIdIn(Set<Integer> employerIds);
 
 }

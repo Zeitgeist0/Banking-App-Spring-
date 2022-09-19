@@ -28,7 +28,7 @@ public class EmployerRequestMapper extends DtoMapperFacade<Employer, EmployerReq
   @Override
   protected void decorateEntity(Employer entity, EmployerRequestDto dto) {
     Set<Integer> customerIds = dto.getCustomerIds();
-    Set<Customer> customers = customerService.findCustomersById(customerIds);
+    Set<Customer> customers = customerService.findAllByEmployersIdIn(customerIds);
     entity.setCustomers(customers);
 
   }
