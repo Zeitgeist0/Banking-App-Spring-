@@ -8,6 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.springframework.validation.annotation.Validated;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -19,9 +20,10 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class EmployerRequestDto {
 
-  @NotNull
+
   private Integer id;
   @NotNull
   @Size(min = 3, message = "Name must have 3 letters")

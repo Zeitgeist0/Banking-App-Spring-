@@ -22,8 +22,7 @@ public class CustomerResponseDto {
   private Integer id;
   @NotNull
   private String name;
-  @NotNull
-  private String password;
+
 
   private String email;
 
@@ -46,7 +45,7 @@ public class CustomerResponseDto {
     return "CustomerResponseDto{" +
       "id=" + id +
       ", name='" + name + '\'' +
-      ", password='" + password + '\'' +
+
       ", email='" + email + '\'' +
       ", age=" + age +
       ", phoneNumber='" + phoneNumber + '\'' +

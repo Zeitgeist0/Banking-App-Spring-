@@ -10,8 +10,13 @@ import com.bankingappfinal.service.mapper.customer.CustomerRequestMapper;
 import com.bankingappfinal.service.mapper.customer.CustomerResponseMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -37,7 +42,7 @@ public class RestCustomerController {
 
 
   @PostMapping()
-  public void save(@RequestBody CustomerRequestDto customer) {
+  public void save(@Valid @RequestBody CustomerRequestDto customer) {
     Customer newCustomer = customerRequestMapper.convertToEntity(customer);
     customerService.save(newCustomer);
   }
@@ -47,6 +52,11 @@ public class RestCustomerController {
   public void deleteById(@RequestBody ObjectNode objectNode) {
     Integer customerId = objectNode.get("customerId").asInt();
     customerService.deleteById(customerId);
+  }
+
+  @ExceptionHandler({ MethodArgumentNotValidException.class})
+  public ResponseEntity<Object> handleException(MethodArgumentNotValidException ex) {
+    return new ResponseEntity<>(ex.getLocalizedMessage(), HttpStatus.BAD_REQUEST);
   }
 
 }

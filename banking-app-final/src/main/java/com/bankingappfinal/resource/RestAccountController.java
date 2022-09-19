@@ -11,8 +11,13 @@ import com.bankingappfinal.service.mapper.account.AccountRequestMapper;
 import com.bankingappfinal.service.mapper.account.AccountResponseMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -50,7 +55,7 @@ private final AccountRequestMapper accountRequestMapper;
     accountService.deleteByNumber(accountNumber);
   }
   @PostMapping()
-  public void save(@RequestBody AccountRequestDto account) {
+  public void save(@Valid @RequestBody AccountRequestDto account) {
  Account newAccount = accountRequestMapper.convertToEntity(account);
     accountService.save(newAccount);
   }
@@ -75,5 +80,10 @@ private final AccountRequestMapper accountRequestMapper;
     Double funds = objectNode.get("funds").asDouble();
 
     accountService.transferFunds(originAccountNumber,destinationAccountNumber, funds);
+  }
+
+  @ExceptionHandler({ MethodArgumentNotValidException.class})
+  public ResponseEntity<Object> handleException(MethodArgumentNotValidException ex) {
+    return new ResponseEntity<>(ex.getLocalizedMessage(), HttpStatus.BAD_REQUEST);
   }
 }

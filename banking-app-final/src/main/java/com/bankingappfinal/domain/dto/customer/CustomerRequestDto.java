@@ -20,7 +20,7 @@ import java.util.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CustomerRequestDto {
-  @NotNull
+
   private Integer id;
   @NotNull
   @Size(min = 3, message = "Name must have 3 letters")
@@ -29,12 +29,16 @@ public class CustomerRequestDto {
   @Size(min = 3, message = "Password must have 3 symbols")
   private String password;
 
-  @Email(message = "Email is not valid", regexp = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\\\.[A-Za-z0-9_-]+)*@\" + \"[^-][A-Za-z0-9-]+(\\\\.[A-Za-z0-9-]+)*(\\\\.[A-Za-z]{2,})$")
+
+//  @Email(message = "Email is not valid",
+//    regexp = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\\\.[A-Za-z0-9_-]+)*@\" + \"[^-]" +
+//      "[A-Za-z0-9-]+(\\\\.[A-Za-z0-9-]+)*(\\\\.[A-Za-z]{2,})$")
+  @Pattern(regexp = "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$")
   @NotEmpty(message = "Email cannot be empty")
   private String email;
 @Min(value = 18, message = "You must be over 18")
   private Integer age;
-  @Pattern(regexp = "(\\+38|0)[0-9]{9}")
+  @Pattern(regexp = "(\\+380|0)[0-9]{9}")
   @NotEmpty(message = "Phone cannot be empty")
   private String phoneNumber;
 

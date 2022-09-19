@@ -20,7 +20,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AccountRequestDto {
-  @NotNull
+
   private Integer id;
 
   @NotNull

@@ -9,8 +9,14 @@ import com.bankingappfinal.service.mapper.employer.EmployerRequestMapper;
 import com.bankingappfinal.service.mapper.employer.EmployerResponseMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraintvalidation.SupportedValidationTarget;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -36,7 +42,7 @@ public class RestEmployerController {
 
 
   @PostMapping()
-  public void save(@RequestBody EmployerRequestDto employer) {
+  public void save(@Valid  @RequestBody EmployerRequestDto employer) {
     Employer newEmployer = employerRequestMapper.convertToEntity(employer);
 
     employerService.save(newEmployer);
@@ -48,5 +54,9 @@ public class RestEmployerController {
   public void deleteById(@RequestBody ObjectNode objectNode) {
     Integer employerId = objectNode.get("employerId").asInt();
     employerService.deleteById(employerId);
+  }
+  @ExceptionHandler({ MethodArgumentNotValidException.class})
+  public ResponseEntity<Object> handleException(MethodArgumentNotValidException ex) {
+    return new ResponseEntity<>(ex.getLocalizedMessage(), HttpStatus.BAD_REQUEST);
   }
 }
