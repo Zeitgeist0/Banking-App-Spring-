@@ -26,7 +26,7 @@ public class Employer extends AbstractEntity {
   private String address;
 
 
-  @ManyToMany(mappedBy = "employers",fetch = FetchType.LAZY)
+  @ManyToMany(fetch = FetchType.LAZY )
   private Set<Customer> customers = new LinkedHashSet<>();
 
   @Override

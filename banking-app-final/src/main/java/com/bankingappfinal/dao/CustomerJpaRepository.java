@@ -15,10 +15,8 @@ import java.util.Set;
 
 public interface CustomerJpaRepository extends JpaRepository<Customer, Integer>, JpaSpecificationExecutor<Customer> {
   @EntityGraph("customersFull")
-  Set<Customer> findAllByEmployersIdIn(Set<Integer> customersId);
+  Set<Customer> findAllByIdIn(Set<Integer> customersId);
 
 
-  @EntityGraph("customersFull")
-  Set<Customer> findAllByEmployersIn(Set<Employer> employers);
 
 }

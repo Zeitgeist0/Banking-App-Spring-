@@ -25,7 +25,7 @@ INSERT INTO employers (name, address) VALUES
                                              ('Amazon', 'Amazon street'),
                                              ('Anthony', 'street');
 
-INSERT INTO customers_employers (customers_id, employers_id) values
+INSERT INTO employers_customers (customers_id, employers_id) values
                                                     (1 ,1 ),
                                                     (2 , 2),
                                                     (4 , 2),

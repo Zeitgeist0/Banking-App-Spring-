@@ -4,21 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="request/response dto completed for all entities, request mappers completed">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="dto mapping bugs for customers and employers resolved">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/AccountJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/AccountJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerJpaRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/EmployerJpaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/EmployerJpaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Employer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/customer/CustomerRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/customer/CustomerRequestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/customer/CustomerResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/customer/CustomerResponseMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/employer/EmployerRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/employer/EmployerRequestMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/employer/EmployerResponseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/mapper/employer/EmployerResponseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +175,7 @@
       <workItem from="1663254686101" duration="10289000" />
       <workItem from="1663344587051" duration="5562000" />
       <workItem from="1663350860036" duration="38285000" />
-      <workItem from="1663604170215" duration="1271000" />
+      <workItem from="1663604170215" duration="3979000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -349,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663454606054</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="dto mapping bugs for customers and employers resolved">
+      <created>1663605821387</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1663605821387</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,6 +394,7 @@
     <MESSAGE value="toString modified/nested exception bug resolved. Add funds method bugs resolved" />
     <MESSAGE value="auditing enabled" />
     <MESSAGE value="request/response dto completed for all entities, request mappers completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="request/response dto completed for all entities, request mappers completed" />
+    <MESSAGE value="dto mapping bugs for customers and employers resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="dto mapping bugs for customers and employers resolved" />
   </component>
 </project>

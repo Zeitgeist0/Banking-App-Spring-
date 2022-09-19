@@ -34,7 +34,7 @@ public class Customer extends AbstractEntity {
  private Integer age;
 @Column(name = "phone_number")
 private String phoneNumber;
-  @ManyToMany(fetch = FetchType.LAZY)
+  @ManyToMany(fetch = FetchType.LAZY ,mappedBy = "customers")
   private Set<Employer> employers;
 
   @OneToMany(mappedBy = "customer" ,  orphanRemoval = true ,fetch = FetchType.LAZY , cascade = CascadeType.ALL)
