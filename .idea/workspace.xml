@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="Employer and Customer entities modified such that employer/customer relations are saved through the Employer entity">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="@Validation for DTO implemented, regex pattern for email fixed">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/CustomerPagingRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/employer/EmployerRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/employer/EmployerRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -173,7 +169,7 @@
       <workItem from="1663254686101" duration="10289000" />
       <workItem from="1663344587051" duration="5562000" />
       <workItem from="1663350860036" duration="38285000" />
-      <workItem from="1663604170215" duration="8332000" />
+      <workItem from="1663604170215" duration="9248000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -357,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663609049286</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="@Validation for DTO implemented, regex pattern for email fixed">
+      <created>1663612969456</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1663612969456</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +404,7 @@
     <MESSAGE value="request/response dto completed for all entities, request mappers completed" />
     <MESSAGE value="dto mapping bugs for customers and employers resolved" />
     <MESSAGE value="Employer and Customer entities modified such that employer/customer relations are saved through the Employer entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Employer and Customer entities modified such that employer/customer relations are saved through the Employer entity" />
+    <MESSAGE value="@Validation for DTO implemented, regex pattern for email fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Validation for DTO implemented, regex pattern for email fixed" />
   </component>
 </project>

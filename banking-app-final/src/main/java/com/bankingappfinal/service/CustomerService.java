@@ -2,8 +2,13 @@ package com.bankingappfinal.service;
 
 
 import com.bankingappfinal.dao.CustomerJpaRepository;
+import com.bankingappfinal.dao.CustomerPagingRepository;
 import com.bankingappfinal.domain.Customer;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
@@ -15,7 +20,7 @@ import java.util.Set;
 public class CustomerService implements Service<Customer> {
 
 private final CustomerJpaRepository customerJpaRepository;
-
+private final CustomerPagingRepository customerPagingRepository;
   @Override
   public Optional<Customer> findById(Integer id) {
 
@@ -56,4 +61,16 @@ customerJpaRepository.deleteById(id);
   public Set<Customer> findAllByIdIn (Set<Integer> customersIds) {
     return customerJpaRepository.findAllByIdIn(customersIds);
   }
+
+
+
+  public List<Customer> getAllPageable(int size, int pageNumber) {
+    Sort sort = Sort.by(new Sort.Order(Sort.Direction.ASC, "id"));
+    Pageable pageable = PageRequest.of(pageNumber, size, sort);
+
+    Page<Customer> customerPage = customerPagingRepository.findAll(pageable);
+    return customerPage.toList();
+  }
+
+
 }

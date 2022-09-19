@@ -35,11 +35,16 @@ public class RestCustomerController {
     Integer customerId = objectNode.get("customerId").asInt();
     return customerService.findById(customerId).map(customerResponseMapper::convertToDto);
   }
+  @GetMapping("/allPageable/{size}/{pageNumber}")
+  public List<CustomerResponseDto> getAllPageable(@PathVariable("size") Integer size,
+                                                  @PathVariable("pageNumber") Integer pageNumber) {
+
+    return customerService.getAllPageable(size, pageNumber).stream().map(customerResponseMapper::convertToDto).collect(Collectors.toList());
+  }
   @GetMapping("/all")
   public List<CustomerResponseDto> getAll() {
     return customerService.findAll().stream().map(customerResponseMapper::convertToDto).collect(Collectors.toList());
   }
-
 
   @PostMapping()
   public void save(@Valid @RequestBody CustomerRequestDto customer) {
