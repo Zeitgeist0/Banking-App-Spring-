@@ -52,9 +52,7 @@ public class EmployerService implements Service<Employer> {
     employerJpaRepository.deleteAll(employer);
   }
 
-//  public Set<Employer> findAllByCustomersIs (Set<> employersIds) {
-//  return   employerJpaRepository.findAllByCustomersIs(employersIds);
-//  }
+
 
   public Set<Employer> findAllByIdIn (Set<Integer> employerIds) {
     return employerJpaRepository.findAllByIdIn(employerIds);

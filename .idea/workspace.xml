@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="pagination repository/service/controller added to customers">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/service/AccountServiceTest.java" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="additional tests written for AccountService, for cases when the funds transfer is not completed">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/service/CustomerServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/BankingAppFinalApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/BankingAppFinalApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,11 +97,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountServiceTest">
+  <component name="RunManager" selected="JUnit.CustomerServiceTest.test_GetAllPageable">
     <configuration name="generated-requests#12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="12" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -151,6 +148,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomerServiceTest.test_GetAllPageable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-app-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bankingappfinal.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bankingappfinal.service" />
+      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.service.CustomerServiceTest" />
+      <option name="METHOD_NAME" value="test_GetAllPageable" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BankingAppFinalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="banking-app-final" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bankingappfinal.BankingAppFinalApplication" />
@@ -167,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerServiceTest.test_GetAllPageable" />
         <item itemvalue="JUnit.AccountServiceTest" />
         <item itemvalue="JUnit.AccountServiceTest.test_FundsNotAdded_AccountNotFound" />
         <item itemvalue="JUnit.AccountServiceTest.test_AddFundsSuccessfully" />
         <item itemvalue="HTTP Request.generated-requests#12" />
-        <item itemvalue="HTTP Request.generated-requests#5" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +210,7 @@
       <workItem from="1663344587051" duration="5562000" />
       <workItem from="1663350860036" duration="38285000" />
       <workItem from="1663604170215" duration="10136000" />
-      <workItem from="1663776423181" duration="11509000" />
+      <workItem from="1663776423181" duration="12267000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -395,7 +408,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663613998209</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="AccountService tests completed">
+      <created>1663793918357</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1663793918357</updated>
+    </task>
+    <task id="LOCAL-00030" summary="additional tests written for AccountService, for cases when the funds transfer is not completed">
+      <created>1663794128913</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1663794128913</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,8 +442,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value=" dao/service/controller mapped according to hibernate" />
-    <MESSAGE value=" module renamed" />
     <MESSAGE value="automatic account number UUID generation implemented" />
     <MESSAGE value="AbstractEntity superclass implemented" />
     <MESSAGE value="account number generation fixed" />
@@ -440,6 +465,8 @@
     <MESSAGE value="Employer and Customer entities modified such that employer/customer relations are saved through the Employer entity" />
     <MESSAGE value="@Validation for DTO implemented, regex pattern for email fixed" />
     <MESSAGE value="pagination repository/service/controller added to customers" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination repository/service/controller added to customers" />
+    <MESSAGE value="AccountService tests completed" />
+    <MESSAGE value="additional tests written for AccountService, for cases when the funds transfer is not completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional tests written for AccountService, for cases when the funds transfer is not completed" />
   </component>
 </project>
