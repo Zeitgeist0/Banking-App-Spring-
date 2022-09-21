@@ -148,4 +148,33 @@ verify(accountJpaRepository, never()).save(account1);
     assertEquals(1000, accountOptional1.get().getBalance());
     assertEquals(3000, accountOptional2.get().getBalance());
   }
+
+  @Test
+  public void test_TransferFundsUnsuccessfully_NotEnoughFunds() {
+
+    when(accountJpaRepository.findAccountByNumber(accountNumber1))
+      .thenReturn(accountOptional1);
+    when(accountJpaRepository.findAccountByNumber(accountNumber2))
+      .thenReturn(accountOptional2);
+    accountService.transferFunds(accountNumber1, accountNumber2 , funds2);
+
+    verify(accountJpaRepository , never()).save(account1);
+    verify(accountJpaRepository, never()).save(account2);
+    assertEquals(2000.0, accountOptional1.get().getBalance());
+    assertEquals(2000.0, accountOptional2.get().getBalance());
+  }
+  @Test
+  public void test_TransferFundsUnsuccessfully_DestinationAccountNotFound() {
+
+    when(accountJpaRepository.findAccountByNumber(accountNumber1))
+      .thenReturn(accountOptional1);
+    when(accountJpaRepository.findAccountByNumber(accountNumber2))
+      .thenReturn(Optional.empty());
+    accountService.transferFunds(accountNumber1, accountNumber2 , funds2);
+
+    verify(accountJpaRepository , never()).save(account1);
+    verify(accountJpaRepository, never()).save(account2);
+    assertEquals(2000.0, accountOptional1.get().getBalance());
+    assertEquals(2000.0, accountOptional2.get().getBalance());
+  }
 }
