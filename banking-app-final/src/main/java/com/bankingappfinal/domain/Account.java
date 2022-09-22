@@ -29,7 +29,8 @@ public class Account extends AbstractEntity {
 
 //  @Enumerated(EnumType.STRING)
 @Column(name = "currency")
-  private String currency;
+@Enumerated
+  private Currency currency;
   @Column(name = "balance")
   private Double balance;
 

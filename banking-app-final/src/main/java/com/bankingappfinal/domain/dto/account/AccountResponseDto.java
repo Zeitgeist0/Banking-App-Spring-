@@ -1,5 +1,6 @@
 package com.bankingappfinal.domain.dto.account;
 
+import com.bankingappfinal.domain.Currency;
 import com.bankingappfinal.resource.CustomDateSerializer;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.AllArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Enumerated;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -21,7 +23,8 @@ public class AccountResponseDto {
   private Integer id;
 
   @NotNull
-  private String currency;
+  @Enumerated
+  private Currency currency;
 
   @NotNull
   private String number;

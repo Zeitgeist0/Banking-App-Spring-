@@ -1,5 +1,6 @@
 package com.bankingappfinal.domain.dto.account;
 
+import com.bankingappfinal.domain.Currency;
 import com.bankingappfinal.resource.CustomDateSerializer;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -10,6 +11,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.Enumerated;
 import javax.validation.constraints.*;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -24,8 +26,8 @@ public class AccountRequestDto {
   private Integer id;
 
   @NotNull
-  @Size(min = 3, message = "Currency must have 3 letters")
-  private String currency;
+  @Enumerated
+  private Currency currency;
   @NotNull
   private String number = UUID.randomUUID().toString();
   @NotNull
