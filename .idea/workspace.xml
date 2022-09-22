@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="CustomerService pagination test added">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/RestAccountControllerTest.java" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="@Currency enum implemented on all layers">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/AuditingConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/account/AccountResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/service/AccountServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/service/AccountServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/BankingAppFinalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/BankingAppFinalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/RestAccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,9 +99,37 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BankingAppFinalApplication">
-    <configuration name="generated-requests#12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="12" runType="Run single request">
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.AccountControllerTest">
+    <configuration name="AccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-app-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bankingappfinal.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bankingappfinal.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.resource.AccountControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest.testFindAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-app-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bankingappfinal.resource.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bankingappfinal.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.resource.AccountControllerTest" />
+      <option name="METHOD_NAME" value="testFindAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AccountServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-app-final" />
@@ -116,22 +142,6 @@
       <option name="PACKAGE_NAME" value="com.bankingappfinal.service" />
       <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.service.AccountServiceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AccountServiceTest.test_AddFundsSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="banking-app-final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bankingappfinal.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bankingappfinal.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.service.AccountServiceTest" />
-      <option name="METHOD_NAME" value="test_AddFundsSuccessfully" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AccountControllerTest" />
+        <item itemvalue="JUnit.AccountControllerTest.testFindAll" />
         <item itemvalue="JUnit.CustomerServiceTest.test_GetAllPageable" />
         <item itemvalue="JUnit.AccountServiceTest" />
         <item itemvalue="JUnit.AccountServiceTest.test_FundsNotAdded_AccountNotFound" />
-        <item itemvalue="JUnit.AccountServiceTest.test_AddFundsSuccessfully" />
-        <item itemvalue="HTTP Request.generated-requests#12" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +225,7 @@
       <workItem from="1663350860036" duration="38285000" />
       <workItem from="1663604170215" duration="10136000" />
       <workItem from="1663776423181" duration="13646000" />
-      <workItem from="1663874285344" duration="4001000" />
+      <workItem from="1663874285344" duration="9566000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -434,7 +444,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663794872972</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="@Currency enum implemented on all layers">
+      <created>1663878673706</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1663878673707</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +471,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="AbstractEntity superclass implemented" />
     <MESSAGE value="account number generation fixed" />
     <MESSAGE value="employers dao/service/controller added" />
     <MESSAGE value="CRUD tested + h2 configured and tested" />
@@ -479,6 +495,18 @@
     <MESSAGE value="AccountService tests completed" />
     <MESSAGE value="additional tests written for AccountService, for cases when the funds transfer is not completed" />
     <MESSAGE value="CustomerService pagination test added" />
-    <option name="LAST_COMMIT_MESSAGE" value="CustomerService pagination test added" />
+    <MESSAGE value="@Currency enum implemented on all layers" />
+    <option name="LAST_COMMIT_MESSAGE" value="@Currency enum implemented on all layers" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -30,6 +30,7 @@ public class RestAccountController {
   private final AccountService accountService;
 private final AccountResponseMapper accountResponseMapper;
 private final AccountRequestMapper accountRequestMapper;
+
   @GetMapping("/all")
   public List<AccountResponseDto> getAll() {
     return accountService.findAll().stream().
@@ -39,6 +40,7 @@ private final AccountRequestMapper accountRequestMapper;
 
   @GetMapping("/getById")
   public Optional<AccountResponseDto> getById(@RequestBody ObjectNode objectNode) {
+    System.out.println(objectNode);
     Integer accountId = objectNode.get("accountId").asInt();
     return  accountService.findById(accountId).map(accountResponseMapper::convertToDto);
 
@@ -46,6 +48,7 @@ private final AccountRequestMapper accountRequestMapper;
 
   @DeleteMapping("/deleteById")
   public void deleteById(@RequestBody ObjectNode objectNode) {
+
     Integer accountId = objectNode.get("accountId").asInt();
     accountService.deleteById(accountId);
   }
