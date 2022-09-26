@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="AccountController tests completed, ObjectNode mock implemented">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/resources/application-integrationtest.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/resources/application.yml" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="AccountController integration tests completed">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/CustomerControllerIntegrationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/resources/application-integrationtest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/resources/application-integrationtest.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +99,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountControllerIntegrationTest">
+  <component name="RunManager" selected="JUnit.CustomerControllerIntegrationTest">
     <configuration name="AccountControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-app-final" />
       <extension name="coverage">
@@ -165,18 +162,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerServiceTest.test_GetAllPageable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-app-final" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bankingappfinal.service.*" />
+          <option name="PATTERN" value="com.bankingappfinal.resource.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.bankingappfinal.service" />
-      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.service.CustomerServiceTest" />
-      <option name="METHOD_NAME" value="test_GetAllPageable" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.bankingappfinal.resource" />
+      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.resource.CustomerControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerControllerIntegrationTest" />
         <item itemvalue="JUnit.AccountControllerIntegrationTest" />
         <item itemvalue="JUnit.AccountControllerIntegrationTest.test_DeleteById" />
         <item itemvalue="JUnit.AccountControllerTest" />
         <item itemvalue="JUnit.AccountControllerTest.testFindAll" />
-        <item itemvalue="JUnit.CustomerServiceTest.test_GetAllPageable" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +226,7 @@
       <workItem from="1663776423181" duration="13646000" />
       <workItem from="1663874285344" duration="10069000" />
       <workItem from="1663949604683" duration="3025000" />
-      <workItem from="1664214537762" duration="3122000" />
+      <workItem from="1664214537762" duration="7061000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -463,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663884217914</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="AccountController integration tests completed">
+      <created>1664217853743</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1664217853743</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +486,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="employers dao/service/controller added" />
     <MESSAGE value="CRUD tested + h2 configured and tested" />
     <MESSAGE value="persistence bug on setFunds method fixed" />
     <MESSAGE value="react browser added + table with MUI implemented" />
@@ -508,6 +510,7 @@
     <MESSAGE value="CustomerService pagination test added" />
     <MESSAGE value="@Currency enum implemented on all layers" />
     <MESSAGE value="AccountController tests completed, ObjectNode mock implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="AccountController tests completed, ObjectNode mock implemented" />
+    <MESSAGE value="AccountController integration tests completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="AccountController integration tests completed" />
   </component>
 </project>
