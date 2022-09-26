@@ -33,7 +33,7 @@ INSERT INTO employers (name, address) VALUES
                                              ('Google', 'Google street'),
                                              ('Apple', 'Apple street'),
                                              ('Amazon', 'Amazon street'),
-                                             ('Anthony', 'street');
+                                             ('Terrasoft', 'Terrasoft street');
 
 INSERT INTO employers_customers (customers_id, employers_id) values
                                                     (1 ,1 ),
