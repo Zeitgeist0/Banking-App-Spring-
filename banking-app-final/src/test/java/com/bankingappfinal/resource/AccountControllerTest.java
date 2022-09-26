@@ -30,13 +30,12 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import java.util.List;
 import java.util.Optional;
 
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-//@RunWith(SpringRunner.class)
 @WebMvcTest(RestAccountController.class)
 public class AccountControllerTest {
 
+  @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
   @Autowired
   private MockMvc mockMvc;
 
