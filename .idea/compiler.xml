@@ -10,9 +10,11 @@
         <module name="banking-app-jdbc" />
         <module name="banking-app-final" />
         <module name="banking-app-hibernate" />
+        <module name="banking-app-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="banking-app-1" target="17" />
       <module name="banking-app-final" target="17" />
       <module name="banking-app-hibernate" target="17" />
       <module name="banking-app-jdbc" target="17" />
@@ -20,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="banking-app-1" options="-parameters" />
       <module name="banking-app-final" options="-parameters" />
       <module name="banking-app-hibernate" options="-parameters" />
       <module name="banking-app-jdbc" options="-parameters" />

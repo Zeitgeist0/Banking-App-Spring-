@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="banking-app-1:war exploded">
-    <output-path>$PROJECT_DIR$/banking-app-1/target/banking-app-1-0.0.1-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/banking-app-jdbc/target/banking-app-1-0.0.1-SNAPSHOT</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -12,7 +12,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="banking-app-jdbc" />
+          <element id="module-output" name="banking-app-1" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-data-jdbc:2.7.3" />

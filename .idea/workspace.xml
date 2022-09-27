@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="CustomerController integration tests completed">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/EmployerControllerIntegrationTest.java" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="EmployerController integration tests completed">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_7_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/RoleJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/dao/UserJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/SysRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/SysUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/UsersAndRolesGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/banking_app_1_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_1_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/banking_app_1_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_1_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_core_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_7_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_jdbc_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_7_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/CustomerControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/CustomerControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +87,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/banking-app-final/src/test/resources" />
@@ -99,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployerControllerIntegrationTest">
+  <component name="RunManager" selected="Spring Boot.BankingAppFinalApplication">
     <configuration name="AccountControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-app-final" />
       <extension name="coverage">
@@ -226,7 +246,8 @@
       <workItem from="1663776423181" duration="13646000" />
       <workItem from="1663874285344" duration="10069000" />
       <workItem from="1663949604683" duration="3025000" />
-      <workItem from="1664214537762" duration="8938000" />
+      <workItem from="1664214537762" duration="11228000" />
+      <workItem from="1664304878960" duration="8328000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -473,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664222235143</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="EmployerController integration tests completed">
+      <created>1664223979560</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1664223979560</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="persistence bug on setFunds method fixed" />
     <MESSAGE value="react browser added + table with MUI implemented" />
     <MESSAGE value="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode" />
     <MESSAGE value="customers front-end display improved" />
@@ -518,6 +545,7 @@
     <MESSAGE value="AccountController tests completed, ObjectNode mock implemented" />
     <MESSAGE value="AccountController integration tests completed" />
     <MESSAGE value="CustomerController integration tests completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="CustomerController integration tests completed" />
+    <MESSAGE value="EmployerController integration tests completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="EmployerController integration tests completed" />
   </component>
 </project>
