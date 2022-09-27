@@ -10,28 +10,28 @@ import org.springframework.security.web.SecurityFilterChain;
 
 //@Configuration
 //@EnableWebSecurity
-public class SecurityConfig  {
-
-  @Bean
-  public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-    System.out.println("filterChain");
-    http
-      .csrf().disable()
-      .authorizeRequests()
-      .antMatchers("/login", "/base", "/console/**").permitAll()
-      .antMatchers("/customers/**", "/accounts/**","/employers/**").hasRole("USER")
-      .antMatchers("/admin/**").hasRole("ADMIN")
-                    .anyRequest().authenticated()
-      .and()
-      .formLogin()
-      .loginPage("/login")
-      .permitAll()
-      .and()
-      .logout()
-      .logoutSuccessUrl("/login")
-      .invalidateHttpSession(true)
-      .deleteCookies("JSESSIONID")
-      .permitAll();
-    return http.build();
-  }
-}
+//public class SecurityConfig  {
+//
+//  @Bean
+//  public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+//    System.out.println("filterChain");
+//    http
+//      .csrf().disable()
+//      .authorizeRequests()
+//      .antMatchers("/login", "/base", "/console/**").permitAll()
+//      .antMatchers("/customers/**", "/accounts/**","/employers/**").hasRole("USER")
+//      .antMatchers("/admin/**").hasRole("ADMIN")
+//                    .anyRequest().authenticated()
+//      .and()
+//      .formLogin()
+//      .loginPage("/login")
+//      .permitAll()
+//      .and()
+//      .logout()
+//      .logoutSuccessUrl("/login")
+//      .invalidateHttpSession(true)
+//      .deleteCookies("JSESSIONID")
+//      .permitAll();
+//    return http.build();
+//  }
+//}

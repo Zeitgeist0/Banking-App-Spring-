@@ -19,7 +19,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application-integrationtest.yml")
-@AutoConfigureMockMvc
+@AutoConfigureMockMvc(addFilters = false)
 @Transactional
 public class EmployerControllerIntegrationTest {
   @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
