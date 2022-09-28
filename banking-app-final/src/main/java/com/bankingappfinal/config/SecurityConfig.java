@@ -14,27 +14,16 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig  {
-  @Bean
-  public WebMvcConfigurer corsConfigurer() {
-    return new WebMvcConfigurer() {
-      @Override
-      public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**")
-          .allowedOrigins("http://localhost:3000")
-          .allowedMethods("HEAD", "GET", "PUT", "POST", "DELETE", "PATCH")
-        .allowedHeaders("Content_Type", "Authorization");
-      }
-    };
-  }
+
   @Bean
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
     System.out.println("filterChain");
     http
 
-      .csrf().and().cors().disable()
+      .csrf().disable()
       .authorizeRequests()
-      .antMatchers("/login/**", "/base", "/h2-console/**").permitAll()
+      .antMatchers("/login/**",  "/h2-console/**").permitAll()
       .antMatchers("/customers/**", "/accounts/**","/employers/**" ).hasAuthority("USER")
       .antMatchers("/admin/**").hasAuthority("ADMIN")
                     .anyRequest().authenticated()

@@ -1,10 +1,9 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
+
 import React from "react";
-import fetchAllCustomers from "API/customers/fetchAllCustomers";
+
 import Header from "Components/Header/Header";
-import CustomerList from "Components/CustomerList/CustomerList";
 
 import { Management } from "Pages/Management";
 

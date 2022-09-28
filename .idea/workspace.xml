@@ -4,15 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="tests security disabled, project build successfully compiled">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="security config updated, login page is now displayed properly">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/UsersAndRolesGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/UsersAndRolesGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +250,7 @@
       <workItem from="1663949604683" duration="3025000" />
       <workItem from="1664214537762" duration="11228000" />
       <workItem from="1664304878960" duration="13573000" />
-      <workItem from="1664385187790" duration="9793000" />
+      <workItem from="1664385187790" duration="13864000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -514,7 +518,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664321011552</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="security config updated, login page is now displayed properly">
+      <created>1664397200921</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1664397200922</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -534,7 +545,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="customers front-end display improved" />
     <MESSAGE value="added UI to create new customers" />
     <MESSAGE value="button renamed" />
     <MESSAGE value="management styles updated, components updated" />
@@ -559,6 +569,7 @@
     <MESSAGE value="EmployerController integration tests completed" />
     <MESSAGE value="basic spring security configured" />
     <MESSAGE value="tests security disabled, project build successfully compiled" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests security disabled, project build successfully compiled" />
+    <MESSAGE value="security config updated, login page is now displayed properly" />
+    <option name="LAST_COMMIT_MESSAGE" value="security config updated, login page is now displayed properly" />
   </component>
 </project>

@@ -15,7 +15,7 @@ import java.util.Set;
 @Component
 public class UsersAndRolesGenerator {
 @Autowired
-  PasswordEncoder passwordEncoder;
+ private  PasswordEncoder passwordEncoder;
   @Autowired
   private UserJpaRepository userJpaRepository;
 @Autowired

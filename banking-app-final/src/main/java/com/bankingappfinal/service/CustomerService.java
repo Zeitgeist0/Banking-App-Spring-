@@ -17,6 +17,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor
 @org.springframework.stereotype.Service
+@Transactional
 public class CustomerService implements Service<Customer> {
 
 private final CustomerJpaRepository customerJpaRepository;

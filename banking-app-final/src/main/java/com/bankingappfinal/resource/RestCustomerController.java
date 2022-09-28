@@ -25,6 +25,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @RequestMapping("/customers")
 @CrossOrigin(origins = {"http://localhost:3000"})
+
 public class RestCustomerController {
   private final CustomerService customerService;
   private final CustomerResponseMapper customerResponseMapper;

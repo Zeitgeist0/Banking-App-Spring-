@@ -26,6 +26,7 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @RequestMapping("/accounts")
 @CrossOrigin(origins = {"http://localhost:3000"})
+
 public class RestAccountController {
   private final AccountService accountService;
 private final AccountResponseMapper accountResponseMapper;

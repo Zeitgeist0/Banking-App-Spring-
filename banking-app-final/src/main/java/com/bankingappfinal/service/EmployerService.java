@@ -13,6 +13,7 @@ import java.util.Set;
 
 @RequiredArgsConstructor
 @org.springframework.stereotype.Service
+@Transactional
 public class EmployerService implements Service<Employer> {
 
   private final EmployerJpaRepository employerJpaRepository;

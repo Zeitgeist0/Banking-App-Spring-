@@ -13,6 +13,7 @@ import java.util.Optional;
 
 @RequiredArgsConstructor
 @org.springframework.stereotype.Service
+@Transactional
 public class AccountService implements Service<Account> {
 
 private final AccountJpaRepository accountJpaRepository;
