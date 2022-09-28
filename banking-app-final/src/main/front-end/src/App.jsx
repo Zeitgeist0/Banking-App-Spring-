@@ -17,7 +17,7 @@ function App() {
 
       <main>
         <Routes>
-          <Route path="/customers/*" element={<Customers />} />
+          <Route path="/allcustomers/*" element={<Customers />} />
 
           <Route path="/management/*" element={<Management />} />
         </Routes>

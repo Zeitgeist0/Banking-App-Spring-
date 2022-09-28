@@ -47,7 +47,7 @@ public class RestCustomerController {
   }
 
   @PostMapping()
-  public void save(@Valid @RequestBody CustomerRequestDto customer) {
+  public void save(@RequestBody CustomerRequestDto customer) {
     Customer newCustomer = customerRequestMapper.convertToEntity(customer);
     customerService.save(newCustomer);
   }

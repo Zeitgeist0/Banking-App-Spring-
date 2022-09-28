@@ -8,9 +8,7 @@ export default async function createNewAccount(currency, balance, customerId) {
       body: JSON.stringify({
         currency,
         balance,
-        customer: {
-          id: customerId,
-        },
+        customerId: customerId,
       }),
     });
     return res.json();

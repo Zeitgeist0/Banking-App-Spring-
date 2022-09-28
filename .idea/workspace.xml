@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="basic spring security configured">
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="tests security disabled, project build successfully compiled">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/Header.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/CustomerControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/CustomerControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/EmployerControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/EmployerControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/UserDetailsServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AccountControllerTest">
+  <component name="RunManager" selected="Spring Boot.BankingAppFinalApplication">
     <configuration name="AccountControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-app-final" />
       <extension name="coverage">
@@ -157,6 +160,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.bankingappfinal.resource" />
       <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.resource.EmployerControllerIntegrationTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,6 +185,8 @@
     <configuration name="BankingAppFinalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="banking-app-final" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bankingappfinal.BankingAppFinalApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,10 +194,21 @@
     <configuration name="BankingAppHibernateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="banking-app-hibernate" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.app.banking.hibernate.bankingapphibernate.BankingAppHibernateApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AccountControllerIntegrationTest" />
+      <item itemvalue="JUnit.AccountControllerTest" />
+      <item itemvalue="JUnit.CustomerControllerIntegrationTest" />
+      <item itemvalue="JUnit.EmployerControllerIntegrationTest" />
+      <item itemvalue="JUnit.EmployerControllerIntegrationTest.test_Save_AndGet" />
+      <item itemvalue="Spring Boot.BankingAppFinalApplication" />
+      <item itemvalue="Spring Boot.BankingAppHibernateApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AccountControllerTest" />
@@ -228,7 +245,8 @@
       <workItem from="1663874285344" duration="10069000" />
       <workItem from="1663949604683" duration="3025000" />
       <workItem from="1664214537762" duration="11228000" />
-      <workItem from="1664304878960" duration="10105000" />
+      <workItem from="1664304878960" duration="13573000" />
+      <workItem from="1664385187790" duration="9793000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -489,7 +507,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664318818517</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="tests security disabled, project build successfully compiled">
+      <created>1664321011552</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1664321011552</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +534,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="@RequestParam deleted from all controllers, mapping adapted to @RequestBody with jackson's ObjectNode" />
     <MESSAGE value="customers front-end display improved" />
     <MESSAGE value="added UI to create new customers" />
     <MESSAGE value="button renamed" />
@@ -534,6 +558,7 @@
     <MESSAGE value="CustomerController integration tests completed" />
     <MESSAGE value="EmployerController integration tests completed" />
     <MESSAGE value="basic spring security configured" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic spring security configured" />
+    <MESSAGE value="tests security disabled, project build successfully compiled" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests security disabled, project build successfully compiled" />
   </component>
 </project>

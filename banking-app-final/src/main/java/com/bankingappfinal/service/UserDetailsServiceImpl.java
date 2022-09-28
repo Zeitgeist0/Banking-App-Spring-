@@ -37,6 +37,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     List<SimpleGrantedAuthority> authorities = sysUser.get().getSysRoles().stream()
       .map(r -> new SimpleGrantedAuthority(r.getName()))
       .toList();
+    System.out.println(authorities);
     return new User(sysUser.get().getName(), sysUser.get().getPassword(), authorities);
   }
 }
