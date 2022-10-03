@@ -25,7 +25,6 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 @RequestMapping("/customers")
 @CrossOrigin(origins = {"http://localhost:3000"})
-
 public class RestCustomerController {
   private final CustomerService customerService;
   private final CustomerResponseMapper customerResponseMapper;
@@ -60,9 +59,5 @@ public class RestCustomerController {
     customerService.deleteById(customerId);
   }
 
-  @ExceptionHandler({ MethodArgumentNotValidException.class})
-  public ResponseEntity<Object> handleException(MethodArgumentNotValidException ex) {
-    return new ResponseEntity<>(ex.getLocalizedMessage(), HttpStatus.BAD_REQUEST);
-  }
 
 }

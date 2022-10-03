@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="@SLF4J logging enabled for all controller methods at all levels" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="@NotNull validation added to needed entities">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/advice/GlobalControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/aspect/LoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestUserController.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -238,7 +247,7 @@
       <workItem from="1664304878960" duration="13573000" />
       <workItem from="1664385187790" duration="17113000" />
       <workItem from="1664469808319" duration="10878000" />
-      <workItem from="1664823865834" duration="2536000" />
+      <workItem from="1664823865834" duration="4837000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -527,7 +536,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664826136521</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="@NotNull validation added to needed entities">
+      <created>1664826650866</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1664826650866</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -547,7 +563,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="management styles updated, components updated" />
     <MESSAGE value=" database and controller bugs fixed, account functionality added to front-end" />
     <MESSAGE value="project built and compiled into WAR file" />
     <MESSAGE value="Spring Data dao/service/controller added" />
@@ -572,7 +587,8 @@
     <MESSAGE value="security config updated, login page is now displayed properly" />
     <MESSAGE value="transactional annotations added, cors config moved to separate class" />
     <MESSAGE value="@SLF4J logging enabled for all controller methods at all levels" />
-    <option name="LAST_COMMIT_MESSAGE" value="@SLF4J logging enabled for all controller methods at all levels" />
+    <MESSAGE value="@NotNull validation added to needed entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="@NotNull validation added to needed entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

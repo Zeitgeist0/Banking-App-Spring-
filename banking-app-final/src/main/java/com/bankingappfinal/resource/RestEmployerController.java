@@ -55,8 +55,5 @@ public class RestEmployerController {
     Integer employerId = objectNode.get("employerId").asInt();
     employerService.deleteById(employerId);
   }
-  @ExceptionHandler({ MethodArgumentNotValidException.class})
-  public ResponseEntity<Object> handleException(MethodArgumentNotValidException ex) {
-    return new ResponseEntity<>(ex.getLocalizedMessage(), HttpStatus.BAD_REQUEST);
-  }
+
 }

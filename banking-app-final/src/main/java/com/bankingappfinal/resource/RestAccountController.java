@@ -86,8 +86,5 @@ private final AccountRequestMapper accountRequestMapper;
     accountService.transferFunds(originAccountNumber,destinationAccountNumber, funds);
   }
 
-  @ExceptionHandler({ MethodArgumentNotValidException.class})
-  public ResponseEntity<Object> handleException(MethodArgumentNotValidException ex) {
-    return new ResponseEntity<>(ex.getLocalizedMessage(), HttpStatus.BAD_REQUEST);
-  }
+
 }
