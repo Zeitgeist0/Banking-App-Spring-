@@ -4,18 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="security config updated, login page is now displayed properly">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/CorsConfig.java" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="transactional annotations added, cors config moved to separate class">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/aspect/LoggingAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.d86da261.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.d86da261.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.ba3f2f50.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.ba3f2f50.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.ba3f2f50.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/BankingAppFinalApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/BankingAppFinalApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/UsersAndRolesGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/UsersAndRolesGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/service/EmployerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +142,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BankingAppFinalApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="banking-app-final" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bankingappfinal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bankingappfinal" />
+      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.BankingAppFinalApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="banking-app-final" />
       <extension name="coverage">
@@ -170,22 +188,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmployerControllerIntegrationTest.test_Save_AndGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="banking-app-final" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bankingappfinal.resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.bankingappfinal.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.bankingappfinal.resource.EmployerControllerIntegrationTest" />
-      <option name="METHOD_NAME" value="test_Save_AndGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BankingAppFinalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="banking-app-final" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bankingappfinal.BankingAppFinalApplication" />
@@ -205,21 +207,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AccountControllerIntegrationTest" />
       <item itemvalue="JUnit.AccountControllerTest" />
-      <item itemvalue="JUnit.CustomerControllerIntegrationTest" />
       <item itemvalue="JUnit.EmployerControllerIntegrationTest" />
-      <item itemvalue="JUnit.EmployerControllerIntegrationTest.test_Save_AndGet" />
+      <item itemvalue="JUnit.BankingAppFinalApplicationTests" />
+      <item itemvalue="JUnit.AccountControllerIntegrationTest" />
+      <item itemvalue="JUnit.CustomerControllerIntegrationTest" />
       <item itemvalue="Spring Boot.BankingAppFinalApplication" />
       <item itemvalue="Spring Boot.BankingAppHibernateApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AccountControllerTest" />
-        <item itemvalue="JUnit.EmployerControllerIntegrationTest" />
-        <item itemvalue="JUnit.EmployerControllerIntegrationTest.test_Save_AndGet" />
         <item itemvalue="JUnit.CustomerControllerIntegrationTest" />
+        <item itemvalue="JUnit.AccountControllerTest" />
         <item itemvalue="JUnit.AccountControllerIntegrationTest" />
+        <item itemvalue="JUnit.BankingAppFinalApplicationTests" />
+        <item itemvalue="JUnit.EmployerControllerIntegrationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +252,9 @@
       <workItem from="1663949604683" duration="3025000" />
       <workItem from="1664214537762" duration="11228000" />
       <workItem from="1664304878960" duration="13573000" />
-      <workItem from="1664385187790" duration="13864000" />
+      <workItem from="1664385187790" duration="17113000" />
+      <workItem from="1664469808319" duration="10878000" />
+      <workItem from="1664823865834" duration="2172000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -525,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664397200922</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="transactional annotations added, cors config moved to separate class">
+      <created>1664401354924</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1664401354924</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -545,7 +556,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added UI to create new customers" />
     <MESSAGE value="button renamed" />
     <MESSAGE value="management styles updated, components updated" />
     <MESSAGE value=" database and controller bugs fixed, account functionality added to front-end" />
@@ -570,6 +580,17 @@
     <MESSAGE value="basic spring security configured" />
     <MESSAGE value="tests security disabled, project build successfully compiled" />
     <MESSAGE value="security config updated, login page is now displayed properly" />
-    <option name="LAST_COMMIT_MESSAGE" value="security config updated, login page is now displayed properly" />
+    <MESSAGE value="transactional annotations added, cors config moved to separate class" />
+    <option name="LAST_COMMIT_MESSAGE" value="transactional annotations added, cors config moved to separate class" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalArgumentException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

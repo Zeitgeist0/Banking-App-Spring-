@@ -10,8 +10,8 @@ logging:
   level:
     org:
     com:
-    springframework:
-        security: DEBUG
+#    springframework:
+#        security: DEBUG
 ---
 spring:
   profiles:
