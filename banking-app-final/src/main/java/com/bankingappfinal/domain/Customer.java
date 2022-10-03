@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -23,15 +24,19 @@ import java.util.Set;
   }
 )
 public class Customer extends AbstractEntity {
-
+@NotNull
   @Column(name = "name")
  private String name;
+  @NotNull
   @Column(name = "password")
   private String password;
+  @NotNull
   @Column(name = "email")
  private String email;
+  @NotNull
   @Column(name = "age")
  private Integer age;
+  @NotNull
 @Column(name = "phone_number")
 private String phoneNumber;
   @ManyToMany(fetch = FetchType.LAZY ,mappedBy = "customers")

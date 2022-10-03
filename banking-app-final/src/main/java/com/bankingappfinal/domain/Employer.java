@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -20,8 +21,10 @@ import java.util.Set;
   }
 )
 public class Employer extends AbstractEntity {
+  @NotNull
   @Column(name = "name")
   private String name;
+  @NotNull
   @Column(name = "address")
   private String address;
 

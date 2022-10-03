@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
 
@@ -22,18 +23,20 @@ import java.util.UUID;
   }
 )
 public class Account extends AbstractEntity {
-
+  @NotNull
   @Column(name = "number")
   private String number = UUID.randomUUID().toString();
 
 
 //  @Enumerated(EnumType.STRING)
+@NotNull
 @Column(name = "currency")
 @Enumerated
   private Currency currency;
+  @NotNull
   @Column(name = "balance")
   private Double balance;
-
+@NotNull
   @ManyToOne (fetch = FetchType.LAZY)
   @JoinColumn(name = "customer_id" )
  private Customer customer;
