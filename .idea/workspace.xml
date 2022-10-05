@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="@NotNull validation added to needed entities">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/advice/GlobalControllerAdvice.java" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="LoggingAspect and GlobalControllerAdvice implemented and optimized">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_classgraph_classgraph_4_8_139.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_sockjs_client_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_stomp_websocket_2_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_webjars_webjars_locator_core_0_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/banking_app_final_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/aspect/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/aspect/LoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestCustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestEmployerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestUserController.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +252,8 @@
       <workItem from="1664304878960" duration="13573000" />
       <workItem from="1664385187790" duration="17113000" />
       <workItem from="1664469808319" duration="10878000" />
-      <workItem from="1664823865834" duration="4837000" />
+      <workItem from="1664823865834" duration="10437000" />
+      <workItem from="1664992953661" duration="2320000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -543,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664826650866</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="LoggingAspect and GlobalControllerAdvice implemented and optimized">
+      <created>1664829086850</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1664829086850</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,7 +576,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value=" database and controller bugs fixed, account functionality added to front-end" />
     <MESSAGE value="project built and compiled into WAR file" />
     <MESSAGE value="Spring Data dao/service/controller added" />
     <MESSAGE value="account request/response dto added, all Id's changed to Integer type" />
@@ -588,7 +600,8 @@
     <MESSAGE value="transactional annotations added, cors config moved to separate class" />
     <MESSAGE value="@SLF4J logging enabled for all controller methods at all levels" />
     <MESSAGE value="@NotNull validation added to needed entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="@NotNull validation added to needed entities" />
+    <MESSAGE value="LoggingAspect and GlobalControllerAdvice implemented and optimized" />
+    <option name="LAST_COMMIT_MESSAGE" value="LoggingAspect and GlobalControllerAdvice implemented and optimized" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

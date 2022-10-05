@@ -24,12 +24,24 @@ public class SecurityConfig   {
     http.cors().and()
       .csrf().disable()
       .authorizeRequests()
-      .antMatchers("/login/**",  "/h2-console/**").permitAll()
-      .antMatchers("/customers/**", "/accounts/**","/employers/**" , "/allcustomers/**" ).hasAuthority("USER")
+      .antMatchers("/",
+        "/error",
+        "/favicon.ico",
+        "/**/*.png",
+        "/**/*.gif",
+        "/**/*.svg",
+        "/**/*.jpg",
+        "/**/*.html",
+        "/**/*.css",
+        "/**/*.js")
+      .permitAll()
+      .antMatchers("/login/**",  "/h2-console/**", "/ws/**").permitAll()
+      .antMatchers("/customers/**", "/accounts/**","/employers/**"  ).hasAuthority("USER")
       .antMatchers("/admin/**").hasAuthority("ADMIN")
                     .anyRequest().authenticated()
       .and()
       .formLogin()
+
       .permitAll()
       .and()
       .logout()
