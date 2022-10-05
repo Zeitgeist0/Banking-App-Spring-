@@ -1,6 +1,7 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import React, { useEffect, useState } from "react";
 
 import Header from "Components/Header/Header";
@@ -19,12 +20,8 @@ function App() {
     websocket = Stomp.over(socket);
     websocket.connect({}, function (frame) {
       console.log("Connected: " + frame);
-      websocket.subscribe("/queue/user", function (greeting) {
-        // showGreeting(JSON.parse(greeting.body).content);
-        setparams(greeting.body);
-      });
-      websocket.subscribe("/topic/color", function (greeting) {
-        // setNewColor(JSON.parse(greeting.body).content);
+      websocket.subscribe("/queue/user", function (message) {
+        toast(message.body);
       });
     });
   }, []);
@@ -32,7 +29,17 @@ function App() {
   return (
     <>
       <Header />
-
+      <ToastContainer
+        position="top-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <main>
         <p>{params}</p>
         <Routes>

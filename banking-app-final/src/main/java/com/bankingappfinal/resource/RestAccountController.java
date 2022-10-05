@@ -72,10 +72,12 @@ private final SimpMessagingTemplate simpMessagingTemplate;
     String number = objectNode.get("number").asText();
     Double funds = objectNode.get("funds").asDouble();
 
-
-    simpMessagingTemplate.convertAndSend( "/queue/user", "Hello");
     accountService.addFunds(number,funds);
-
+    StringBuilder sb = new StringBuilder();
+    sb.append(funds);
+    sb.append(" funds were added to the following account number: ");
+    sb.append(number);
+    simpMessagingTemplate.convertAndSend( "/queue/user", sb.toString());
   }
 
   @PutMapping("/withdrawFunds")
