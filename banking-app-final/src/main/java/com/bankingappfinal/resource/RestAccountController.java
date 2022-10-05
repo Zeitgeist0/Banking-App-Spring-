@@ -71,20 +71,23 @@ private final SimpMessagingTemplate simpMessagingTemplate;
   public void addFunds(@RequestBody ObjectNode objectNode) {
     String number = objectNode.get("number").asText();
     Double funds = objectNode.get("funds").asDouble();
+    boolean isSuccessful =  accountService.addFunds(number,funds);
 
-    accountService.addFunds(number,funds);
-    StringBuilder sb = new StringBuilder();
-    sb.append(funds);
-    sb.append(" funds were added to the following account number: ");
-    sb.append(number);
-    simpMessagingTemplate.convertAndSend( "/queue/user", sb.toString());
+    String conditional = (isSuccessful ?  "were successfully" : "could not be");
+    String resultMessage = String.format("%s funds %s added to the following account number:\n %s",
+      funds, conditional, number);
+    simpMessagingTemplate.convertAndSend( "/queue/user", resultMessage);
   }
 
   @PutMapping("/withdrawFunds")
   public void withdrawFunds(@RequestBody ObjectNode objectNode) {
     String number = objectNode.get("number").asText();
     Double funds = objectNode.get("funds").asDouble();
-    accountService.withdrawFunds(number,funds);
+    boolean isSuccessful = accountService.withdrawFunds(number,funds);
+    String conditional = (isSuccessful ?  "were successfully" : "could not be");
+    String resultMessage = String.format("%s funds %s withdrawn from the following account number:\n %s",
+      funds, conditional, number);
+    simpMessagingTemplate.convertAndSend( "/queue/user", resultMessage);
   }
 
   @PutMapping("/transferFunds")
@@ -93,7 +96,15 @@ private final SimpMessagingTemplate simpMessagingTemplate;
     String destinationAccountNumber = objectNode.get("destinationAccountNumber").asText();
     Double funds = objectNode.get("funds").asDouble();
 
-    accountService.transferFunds(originAccountNumber,destinationAccountNumber, funds);
+   boolean isSuccessful =  accountService.transferFunds(originAccountNumber,destinationAccountNumber, funds);
+    String conditional = (isSuccessful ?  "were successfully" : "could not be");
+    String resultMessage = String.format("""
+        %s funds %s transferred from the following account number:
+         %s
+         to the following account number:\s
+         %s""",
+      funds, conditional, originAccountNumber, destinationAccountNumber);
+    simpMessagingTemplate.convertAndSend( "/queue/user", resultMessage);
   }
 
 

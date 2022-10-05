@@ -18,26 +18,34 @@ public class AccountService implements Service<Account> {
 
 private final AccountJpaRepository accountJpaRepository;
 
-public void addFunds (String number , Double funds) {
+public boolean addFunds (String number , Double funds) {
     Optional<Account> account = accountJpaRepository.findAccountByNumber(number);
-    account.ifPresent(currentAccount -> {
-
-      currentAccount.setBalance(currentAccount.getBalance() + funds);
-      accountJpaRepository.save(currentAccount);
-    });
-
+return account.map(currentAccount -> {
+  currentAccount.setBalance(currentAccount.getBalance() + funds);
+  accountJpaRepository.save(currentAccount);
+  return true;
+}).orElse(false);
 }
-  public void withdrawFunds (String number , Double funds) {
+  public boolean withdrawFunds (String number , Double funds) {
     Optional<Account> account = accountJpaRepository.findAccountByNumber(number);
-    account.ifPresent(currentAccount -> {
-     if( (currentAccount.getBalance() - funds) > 0 ) {
-       currentAccount.setBalance(currentAccount.getBalance() - funds);
-       accountJpaRepository.save(currentAccount);
-     }
-    });
+//    account.ifPresent(currentAccount -> {
+//     if( (currentAccount.getBalance() - funds) > 0 ) {
+//       currentAccount.setBalance(currentAccount.getBalance() - funds);
+//       accountJpaRepository.save(currentAccount);
+//     }
+//    });
+    return account.map(currentAccount -> {
+      if( (currentAccount.getBalance() - funds) > 0 ) {
+        currentAccount.setBalance(currentAccount.getBalance() - funds);
+        accountJpaRepository.save(currentAccount);
+        return true;
+      } else {
+        return false;
+      }
+    }).orElse(false);
   }
 
-  public void transferFunds (String originAccountNumber , String destinationAccountNumber, Double funds) {
+  public boolean transferFunds (String originAccountNumber , String destinationAccountNumber, Double funds) {
     Optional<Account> originAccount = accountJpaRepository.findAccountByNumber(originAccountNumber);
     Optional<Account>  destinationAccount = accountJpaRepository.findAccountByNumber(destinationAccountNumber);
     boolean enoughFunds = originAccount.filter(a -> (a.getBalance() - funds) > 0).isPresent();
@@ -48,8 +56,9 @@ public void addFunds (String number , Double funds) {
       destinationAccount.get().setBalance(destinationBalance + funds);
       accountJpaRepository.save(originAccount.get());
       accountJpaRepository.save(destinationAccount.get());
+      return true;
     }
-
+     return false;
   }
 
   public void deleteByNumber (String number) {
