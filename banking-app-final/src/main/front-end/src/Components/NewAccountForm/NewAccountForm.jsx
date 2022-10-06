@@ -22,12 +22,12 @@ const FormSchema = Yup.object({
 const NewAccountForm = () => {
   const handleFormSubmit = (values, { resetForm }) => {
     const { currency, balance, customerId } = values;
-    createNewAccount(currency, balance, customerId);
+    createNewAccount(currency, customerId, balance);
     resetForm();
   };
   return (
     <>
-      <h2 className="checkout-header">Create a new account</h2>
+      <h2 className="account-header">Create a new account</h2>
       <Formik
         initialValues={{
           currency: "",
@@ -41,7 +41,15 @@ const NewAccountForm = () => {
           <Form className="checkout-form">
             <div className="form-container">
               <div className="form-list-item">
-                <label htmlFor="name">Currency</label>
+                <ul className="currency-list">
+                  <p>Number correspondency for each currency</p>
+                  <li>0 = USD</li>
+                  <li>1 = EUR</li>
+                  <li>2 = UAH</li>
+                  <li>3 = CHF</li>
+                  <li>4 = GBP</li>
+                </ul>
+                <label htmlFor="name">Enter a currency number</label>
                 <Field
                   className="form-field"
                   name="currency"

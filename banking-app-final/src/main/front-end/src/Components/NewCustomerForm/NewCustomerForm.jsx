@@ -7,28 +7,35 @@ import createNewCustomer from "API/customers/createNewCustomer";
 
 const FormSchema = Yup.object({
   name: Yup.string().required("Name is required"),
+  password: Yup.string().required("Password is required"),
   email: Yup.string().required("Email is required"),
   age: Yup.number()
     .typeError("Please enter a number")
     .required("Age is required")
     .positive()
+    .min(18)
     .integer(),
+  phoneNumber: Yup.string().required("Phone number is required"),
 });
 
 const NewCustomerForm = () => {
   const handleFormSubmit = (values, { resetForm }) => {
-    const { name, email, age } = values;
-    createNewCustomer(name, age, email);
+    const { name, password, email, age, phoneNumber } = values;
+
+    createNewCustomer(name, password, email, age, phoneNumber);
     resetForm();
   };
+
   return (
     <>
       <h2 className="checkout-header">Create a new customer</h2>
       <Formik
         initialValues={{
           name: "",
+          password: "",
           email: "",
           age: "",
+          phoneNumber: "",
         }}
         validationSchema={FormSchema}
         onSubmit={handleFormSubmit}
@@ -48,6 +55,20 @@ const NewCustomerForm = () => {
                   component="div"
                   className="error-message"
                   name="name"
+                />
+              </div>
+              <div className="form-list-item">
+                <label htmlFor="name">Password</label>
+                <Field
+                  className="form-field"
+                  name="password"
+                  type="password"
+                  placeholder="Password"
+                />
+                <ErrorMessage
+                  component="div"
+                  className="error-message"
+                  name="password"
                 />
               </div>
               <div className="form-list-item">
@@ -78,7 +99,20 @@ const NewCustomerForm = () => {
                   name="age"
                 />
               </div>
-
+              <div className="form-list-item">
+                <label htmlFor="name">Phone number</label>
+                <Field
+                  className="form-field"
+                  name="phoneNumber"
+                  type="phoneNumber"
+                  placeholder="Phone number"
+                />
+                <ErrorMessage
+                  component="div"
+                  className="error-message"
+                  name="phoneNumber"
+                />
+              </div>
               <button className="form-button" type="submit">
                 Create
               </button>

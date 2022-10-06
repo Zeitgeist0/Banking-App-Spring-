@@ -1,11 +1,11 @@
-.customers-list {
+.items-list {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   list-style: none;
 }
 
-.customer {
+.item {
   width: 400px;
   border: 2px solid #797979;
   margin-bottom: 25px;
@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 
-.customers-container {
+.items-container {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;

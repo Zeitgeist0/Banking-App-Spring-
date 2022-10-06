@@ -9,13 +9,23 @@ const Header = () => {
         <nav>
           <ul className="header-list">
             <li>
-              <Link className="header-item" to="/allcustomers">
+              <Link className="header-item" to="/customers">
                 Customers
+              </Link>
+            </li>
+            <li>
+              <Link className="header-item" to="/employers">
+                Employers
               </Link>
             </li>
             <li>
               <Link className="header-item" to="/management">
                 Management
+              </Link>
+            </li>
+            <li>
+              <Link className="header-item" to="/transfers">
+                Cash transfers
               </Link>
             </li>
           </ul>

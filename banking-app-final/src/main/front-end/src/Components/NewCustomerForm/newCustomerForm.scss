@@ -8,13 +8,20 @@
   font-size: 35px;
   line-height: 30px;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
-
+.account-header {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0px;
+}
 .form-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin-top: 15px;
@@ -55,4 +62,10 @@
 .form-button:hover {
   background-color: #4caf50; /* Green */
   color: white;
+}
+
+.currency-list {
+  list-style: none;
+  margin-top: 0;
+  // padding: 0;
 }

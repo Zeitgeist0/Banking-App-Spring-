@@ -11,6 +11,8 @@ import { Management } from "Pages/Management";
 import Customers from "./Pages/Customers";
 import SockJS from "sockjs-client";
 import Stomp from "stompjs";
+import { CashTransfers } from "Pages/CashTransfers";
+import Employers from "Pages/Employers";
 
 function App() {
   let websocket = null;
@@ -43,9 +45,10 @@ function App() {
       <main>
         <p>{params}</p>
         <Routes>
-          <Route path="/allcustomers/*" element={<Customers />} />
-
+          <Route path="/customers/*" element={<Customers />} />
+          <Route path="/employers/*" element={<Employers />} />
           <Route path="/management/*" element={<Management />} />
+          <Route path="/transfers/*" element={<CashTransfers />} />
         </Routes>
       </main>
     </>

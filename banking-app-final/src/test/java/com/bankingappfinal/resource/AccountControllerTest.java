@@ -23,6 +23,7 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
@@ -34,8 +35,8 @@ import java.util.Optional;
 
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-@WebMvcTest(RestAccountController.class)
-@AutoConfigureMockMvc(addFilters = false)
+@WebMvcTest(RestAccountController.class )
+@AutoConfigureMockMvc(addFilters = false )
 public class AccountControllerTest {
 
   @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
@@ -54,8 +55,12 @@ public class AccountControllerTest {
   @Autowired
   AccountRequestMapper accountRequestMapper;
 
+  @MockBean
+  SimpMessagingTemplate simpMessagingTemplate;
+
   @Autowired
   AccountResponseMapper accountResponseMapper;
+
   @TestConfiguration
   public static class TestConfig {
     @Bean
@@ -66,6 +71,7 @@ public class AccountControllerTest {
     public AccountRequestMapper accountRequestMapper() {
       return new AccountRequestMapper();
     }
+
   }
   Account account1;
   Customer customer1;

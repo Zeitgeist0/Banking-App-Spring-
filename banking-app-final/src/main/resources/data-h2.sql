@@ -5,10 +5,11 @@ INSERT INTO customers (name, password, phone_number, age, email) VALUES
                                              ('Claude Andrew',   'f3dgdfg54ehf4fgdfd434df4', '+380961528025',   80, 'bgf@outlook.com'),
                                              ('Patryk Lopez',    'fddgdfgg4ehf4fgdfd434df4', '+380954528025',   27, 'ryd@outlook.com'),
                                              ('Terrell Ware',    'fddgdfgg4ehf4fgdfd434df4', '+380965557025',  25, 'hwh@outlook.com'),
-                                             ('Silas Ritter',    'fddgdfgg3ehf477fgdfd434df4', '+380961564725',  33, 'hwh@outlook.com'),
-                                             ('Korben Castillo', 'fddgdfgg3ehf477fgdfCGdf4', '+380647478025',  45, 'hwh@outlook.com'),
+                                             ('Silas Ritter',    'fddgdfgg3ehf477fgdfd434df4', '+380961564725',  33, 'dgd@outlook.com'),
+                                             ('Korben Castillo', 'fddgdfgg3ehf477fgdfCGdf4', '+380647478025',  45, 'afd@outlook.com'),
                                              ('Nate Gilbert',    'fddgdfgg3ehf477fgdfCGdf4', '+380961757025',  20, 'hwh@outlook.com'),
-                                             ('Monty Baker',     'fd643677fgdfCGdf4', '+380961575754',  78, 'hwh@outlook.com');
+                                             ('Anthony Donovan',    'ds43462634624tg4', '+380965557025',  26, 'don@outlook.com'),
+                                             ('Monty Baker',     'fd643677fgdfCGdf4', '+380961575754',  78, '5d5@outlook.com');
 
 INSERT INTO accounts (number, currency, balance, customer_id) VALUES
                                                                   ('678ce8f1-7fbc-495f-afb4-d1f469afdcd4', 0, 2455, 1),
@@ -28,12 +29,12 @@ INSERT INTO accounts (number, currency, balance, customer_id) VALUES
                                                                   ('18466555b-7347-4b8b-962a-af1085f36ae9', 2,100000, 10)
                                                                   ;
 INSERT INTO employers (name, address) VALUES
-                                             ('Samsung', 'Samsung street'),
-                                             ('Facebook', 'Facebook street'),
-                                             ('Google', 'Google street'),
-                                             ('Apple', 'Apple street'),
-                                             ('Amazon', 'Amazon street'),
-                                             ('Terrasoft', 'Terrasoft street');
+                                             ('Samsung', '3655 North First Street, San Jose, California 95134-1713, USA'),
+                                             ('Facebook', 'Menlo Park, California, USA'),
+                                             ('Google', 'Mountain View, California, United States'),
+                                             ('Apple', 'Cupertino, California, United States'),
+                                             ('Amazon', ' 410 Terry Ave N, Seattle 98109, WA street'),
+                                             ('Terrasoft', 'Boston, MA');
 
 INSERT INTO employers_customers (customers_id, employers_id) values
                                                     (1 ,1 ),

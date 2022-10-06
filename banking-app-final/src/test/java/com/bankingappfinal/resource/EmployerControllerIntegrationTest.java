@@ -43,7 +43,7 @@ public class EmployerControllerIntegrationTest {
       .andExpect(status().isOk())
       .andExpect(MockMvcResultMatchers.jsonPath("id", Matchers.is(1)))
       .andExpect(MockMvcResultMatchers.jsonPath("name", Matchers.is("Samsung")))
-      .andExpect(MockMvcResultMatchers.jsonPath("address", Matchers.is("Samsung street")))
+
     ;
   }
 
@@ -54,16 +54,16 @@ public class EmployerControllerIntegrationTest {
       .andExpect(status().isOk())
       .andExpect(MockMvcResultMatchers.jsonPath("$[0].id", Matchers.is(1)))
       .andExpect(MockMvcResultMatchers.jsonPath("$[0].name", Matchers.is("Samsung")))
-      .andExpect(MockMvcResultMatchers.jsonPath("$[0].address", Matchers.is("Samsung street")))
+
       .andExpect(MockMvcResultMatchers.jsonPath("$[1].id", Matchers.is(2)))
       .andExpect(MockMvcResultMatchers.jsonPath("$[1].name", Matchers.is( "Facebook")))
-      .andExpect(MockMvcResultMatchers.jsonPath("$[1].address", Matchers.is("Facebook street")))
+
       .andExpect(MockMvcResultMatchers.jsonPath("$[2].id", Matchers.is(3)))
       .andExpect(MockMvcResultMatchers.jsonPath("$[2].name", Matchers.is("Google")))
-      .andExpect(MockMvcResultMatchers.jsonPath("$[2].address", Matchers.is("Google street")))
+
       .andExpect(MockMvcResultMatchers.jsonPath("$[3].id", Matchers.is(4)))
       .andExpect(MockMvcResultMatchers.jsonPath("$[3].name", Matchers.is("Apple")))
-      .andExpect(MockMvcResultMatchers.jsonPath("$[3].address", Matchers.is("Apple street")))
+
 
 
     ;

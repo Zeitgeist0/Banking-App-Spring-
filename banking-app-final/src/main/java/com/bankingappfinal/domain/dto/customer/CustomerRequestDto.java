@@ -30,15 +30,14 @@ public class CustomerRequestDto {
   private String password;
 
 
-//  @Email(message = "Email is not valid",
-//    regexp = "^(?=.{1,64}@)[A-Za-z0-9_-]+(\\\\.[A-Za-z0-9_-]+)*@\" + \"[^-]" +
-//      "[A-Za-z0-9-]+(\\\\.[A-Za-z0-9-]+)*(\\\\.[A-Za-z]{2,})$")
+
+
   @Pattern(regexp = "^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$")
   @NotBlank(message = "Email cannot be empty")
   private String email;
 @Min(value = 18, message = "You must be over 18")
   private Integer age;
-  @Pattern(regexp = "(\\+380|0)[0-9]{9}")
+//  @Pattern(regexp = "(\\+380|0)[0-9]{9}")
   @NotBlank(message = "Phone cannot be empty")
   private String phoneNumber;
 

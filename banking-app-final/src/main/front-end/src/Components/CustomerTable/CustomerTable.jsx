@@ -7,28 +7,30 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 
-const AccountTable = ({ accounts }) => {
+const CustomerTable = ({ customers }) => {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 400 }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Account number</TableCell>
-            <TableCell align="right">Currency</TableCell>
-            <TableCell align="right">Balance</TableCell>
+            <TableCell>Name</TableCell>
+            <TableCell align="right">Age</TableCell>
+            <TableCell align="right">Email</TableCell>
+            <TableCell align="right">Phone number</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {accounts.map((account) => (
+          {customers.map((customer) => (
             <TableRow
-              key={account.number}
+              key={customer.id}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {account.number}
+                {customer.name}
               </TableCell>
-              <TableCell align="right">{account.currency}</TableCell>
-              <TableCell align="right">{account.balance}</TableCell>
+              <TableCell align="right">{customer.age}</TableCell>
+              <TableCell align="right">{customer.email}</TableCell>
+              <TableCell align="right">{customer.phoneNumber}</TableCell>
             </TableRow>
           ))}
         </TableBody>
@@ -37,4 +39,4 @@ const AccountTable = ({ accounts }) => {
   );
 };
 
-export default AccountTable;
+export default CustomerTable;

@@ -20,7 +20,7 @@ public class SecurityConfig   {
   @Bean
   public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-    System.out.println("filterChain");
+
     http.cors().and()
       .csrf().disable()
       .authorizeRequests()
@@ -36,12 +36,14 @@ public class SecurityConfig   {
         "/**/*.js")
       .permitAll()
       .antMatchers("/login/**",  "/h2-console/**", "/ws/**").permitAll()
-      .antMatchers("/customers/**", "/accounts/**","/employers/**"  ).hasAuthority("USER")
+      .antMatchers("/customers/**", "/accounts/**","/employers/**" , "/"  ).hasAuthority("USER")
       .antMatchers("/admin/**").hasAuthority("ADMIN")
                     .anyRequest().authenticated()
       .and()
       .formLogin()
 
+      .loginProcessingUrl("/login")
+      .defaultSuccessUrl("/", true)
       .permitAll()
       .and()
       .logout()

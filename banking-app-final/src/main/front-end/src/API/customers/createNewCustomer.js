@@ -1,4 +1,10 @@
-export default async function createNewCustomer(name, age, email) {
+export default async function createNewCustomer(
+  name,
+  password,
+  email,
+  age,
+  phoneNumber
+) {
   try {
     const res = await fetch(`http://localhost:9000/customers`, {
       method: "POST",
@@ -7,8 +13,10 @@ export default async function createNewCustomer(name, age, email) {
       },
       body: JSON.stringify({
         name,
-        age,
+        password,
         email,
+        age,
+        phoneNumber,
       }),
     });
     return res.json();

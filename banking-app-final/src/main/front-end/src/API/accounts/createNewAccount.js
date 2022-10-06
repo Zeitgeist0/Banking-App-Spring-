@@ -1,4 +1,4 @@
-export default async function createNewAccount(currency, balance, customerId) {
+export default async function createNewAccount(currency, customerId, balance) {
   try {
     const res = await fetch(`http://localhost:9000/accounts`, {
       method: "POST",
@@ -7,8 +7,8 @@ export default async function createNewAccount(currency, balance, customerId) {
       },
       body: JSON.stringify({
         currency,
-        balance,
         customerId,
+        balance,
       }),
     });
     return res.json();

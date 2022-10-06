@@ -137,12 +137,12 @@ public class CustomerControllerIntegrationTest {
         .content(
           """
           {
-              "customerId": "11"
+              "customerId": "12"
           }
           """
         ))
       .andExpect(status().isOk())
-      .andExpect(MockMvcResultMatchers.jsonPath("id", Matchers.is(11)))
+      .andExpect(MockMvcResultMatchers.jsonPath("id", Matchers.is(12)))
       .andExpect(MockMvcResultMatchers.jsonPath("name", Matchers.is("Test")))
       .andExpect(MockMvcResultMatchers.jsonPath("email", Matchers.is("domain@etestmail.com")))
       .andExpect(MockMvcResultMatchers.jsonPath("age", Matchers.is(18)))

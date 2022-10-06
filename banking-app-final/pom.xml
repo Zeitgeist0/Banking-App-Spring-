@@ -158,18 +158,27 @@
                             <arguments>install</arguments>
                         </configuration>
                     </execution>
-
                     <execution>
-                        <id>build-frontend</id>
+                        <id>npm run build</id>
                         <goals>
                             <goal>npm</goal>
                         </goals>
                         <phase>prepare-package</phase>
                         <configuration>
-                            <!--suppress UnresolvedMavenProperty -->
-                            <arguments>${npm.build}</arguments>
+                            <arguments>run build</arguments>
                         </configuration>
                     </execution>
+<!--                    <execution>-->
+<!--                        <id>build-frontend</id>-->
+<!--                        <goals>-->
+<!--                            <goal>npm</goal>-->
+<!--                        </goals>-->
+<!--                        <phase>prepare-package</phase>-->
+<!--                        <configuration>-->
+<!--                            &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                            <arguments>${npm.build}</arguments>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
                 </executions>
             </plugin>
 

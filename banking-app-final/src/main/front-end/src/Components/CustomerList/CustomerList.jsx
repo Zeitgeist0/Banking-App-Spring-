@@ -3,11 +3,11 @@ import React from "react";
 import "./customerList.scss";
 const CustomerList = ({ customers }) => {
   return (
-    <div className="customers-container">
-      <ul className="customers-list">
+    <div className="items-container">
+      <ul className="items-list">
         {customers.map((customer) => {
           return (
-            <li className="customer" key={customer.id}>
+            <li className="item" key={customer.id}>
               <Customer customer={customer} />
             </li>
           );
