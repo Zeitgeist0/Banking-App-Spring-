@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="test data modified, added  tips to the front-end UI, API tested, auth roles modified">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.4fa86af5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.4fa86af5.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.67e16118.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.67e16118.js.LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.67e16118.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewEmployerForm/NewEmployerForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/TransferFundsForm/transferFundsForm.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/Customers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/Customers.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.4fa86af5.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/css/main.4fa86af5.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.67e16118.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.67e16118.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/static/js/main.67e16118.js.map" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -252,7 +249,7 @@
       <workItem from="1664469808319" duration="10878000" />
       <workItem from="1664823865834" duration="10437000" />
       <workItem from="1664992953661" duration="12401000" />
-      <workItem from="1665081071301" duration="14605000" />
+      <workItem from="1665081071301" duration="15397000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -590,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665097031540</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="test data modified, added  tips to the front-end UI, API tested, auth roles modified">
+      <created>1665098057851</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1665098057851</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
