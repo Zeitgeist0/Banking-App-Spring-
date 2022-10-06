@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import addFunds from "API/accounts/addFunds";
 import transferFunds from "API/accounts/transferFunds";
+import "./transferFundsForm.scss";
 
 const FormSchema = Yup.object({
   originAccountNumber: Yup.string().required(
@@ -39,12 +40,21 @@ const DeleteAccountForm = () => {
           <Form className="checkout-form">
             <div className="form-container">
               <div className="form-list-item">
-                <label htmlFor="name">Account that will send the money</label>
+                <label htmlFor="name">
+                  Examples of existing account numbers with funds:
+                </label>
+                <p className="account-number-example">
+                  593c74fe-ba9e-441f-8567-1a551e0962fc
+                </p>
+                <p className="account-number-example">
+                  678ce8f1-7fbc-495f-afb4-d1f469afdcd4
+                </p>
+
                 <Field
                   className="form-field"
                   name="originAccountNumber"
                   type="originAccountNumber"
-                  placeholder="Please enter the account number here"
+                  placeholder="Enter the account number that will send the money"
                 />
                 <ErrorMessage
                   component="div"
@@ -54,13 +64,13 @@ const DeleteAccountForm = () => {
               </div>
               <div className="form-list-item">
                 <label htmlFor="name">
-                  Account that will receive the money
+                  {/* Account that will receive the money */}
                 </label>
                 <Field
                   className="form-field"
                   name="destinationAccountNumber"
                   type="destinationAccountNumber"
-                  placeholder="Please enter the account number here"
+                  placeholder="Enter the account number that will receive the money"
                 />
                 <ErrorMessage
                   component="div"
@@ -69,12 +79,12 @@ const DeleteAccountForm = () => {
                 />
               </div>
               <div className="form-list-item">
-                <label htmlFor="name">Funds that will be transferred</label>
+                <label htmlFor="name"></label>
                 <Field
                   className="form-field"
                   name="funds"
                   type="funds"
-                  placeholder="Funds to be transferred"
+                  placeholder="Enter how many funds will be transfered"
                 />
                 <ErrorMessage
                   component="div"

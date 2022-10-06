@@ -27,7 +27,7 @@ const NewAccountForm = () => {
   };
   return (
     <>
-      <h2 className="account-header">Create a new account</h2>
+      <h2 className="checkout-header">Create a new account</h2>
       <Formik
         initialValues={{
           currency: "",

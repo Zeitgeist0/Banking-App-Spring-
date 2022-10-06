@@ -31,14 +31,14 @@ private   RoleJpaRepository roleJpaRepository;
  SysUser regularUser = new SysUser();
  SysUser adminUser = new SysUser();
 
- regularUser.setName("u");
+ regularUser.setName("user");
  regularUser.setEnabled(true);
- regularUser.setPassword(passwordEncoder.encode("u"));
+ regularUser.setPassword(passwordEncoder.encode("user"));
  regularUser.setSysRoles(Set.of(userRole));
 
-   adminUser.setName("a");
+   adminUser.setName("admin");
    adminUser.setEnabled(true);
-   adminUser.setPassword(passwordEncoder.encode("a"));
+   adminUser.setPassword(passwordEncoder.encode("admin"));
    adminUser.setSysRoles(Set.of(userRole , adminRole));
 userJpaRepository.saveAll(List.of(regularUser,adminUser));
   }

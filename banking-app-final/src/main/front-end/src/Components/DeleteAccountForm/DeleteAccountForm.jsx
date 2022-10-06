@@ -29,12 +29,13 @@ const DeleteAccountForm = () => {
           <Form className="checkout-form">
             <div className="form-container">
               <div className="form-list-item">
-                <label htmlFor="name">Account number</label>
+                <label htmlFor="name">Example of an account number:</label>
+                <p>e4d55552-fea4-4544-b40d-0106a47383ce</p>
                 <Field
                   className="form-field"
                   name="accountNumber"
                   type="accountNumber"
-                  placeholder="Account number"
+                  placeholder="Enter the account number that will be deleted"
                 />
                 <ErrorMessage
                   component="div"

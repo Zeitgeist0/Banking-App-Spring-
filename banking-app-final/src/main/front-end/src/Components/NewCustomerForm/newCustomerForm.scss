@@ -8,17 +8,10 @@
   font-size: 35px;
   line-height: 30px;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 40px;
+  margin-top: 70px;
+  margin-bottom: 25px;
 }
-.account-header {
-  font-weight: bold;
-  font-size: 35px;
-  line-height: 30px;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 0px;
-}
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -26,6 +19,12 @@
   align-items: center;
   margin-top: 15px;
   margin-bottom: 25px;
+}
+
+.checkout-form {
+  border-style: solid;
+  margin: auto;
+  width: 600px;
 }
 .form-list-item {
   padding-bottom: 8px;

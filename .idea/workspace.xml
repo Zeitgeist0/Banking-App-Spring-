@@ -4,42 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="front-end API corrected, basic functionality is working">
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/addFunds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/transferFunds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/withdrawFunds.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/employers/getEmployers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/AddFundsForm/AddFundsForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/CustomerTable/CustomerTable.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Employer/Employer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/EmployersList/EmployersList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/TransferFundsForm/TransferFundsForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/WithdrawFundsForm/WithdrawFundsForm.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/CashTransfers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/Employers.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/cashTransfers.scss" afterDir="false" />
+    <list default="true" id="a29108a1-f200-45ab-9178-e68c15ebceda" name="Changes" comment="cash transfers front-end API created, websockets work properly.&#10;employer page,  list and table added.&#10;customers front-end api corrected.&#10;minor bugs resolved">
+      <change afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/employers/saveEmployer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/accounts/createNewAccount.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/customers/createNewCustomer.js" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/API/customers/createNewCustomer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/AccountTable/AccountTable.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Customer/Customer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Customer/Customer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/CustomerList/CustomerList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/CustomerList/CustomerList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/CustomerList/customerList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/CustomerList/customerList.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/DeleteAccountForm/DeleteAccountForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/DeleteAccountForm/DeleteAccountForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewAccountForm/NewAccountForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewAccountForm/NewAccountForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewCustomerForm/NewCustomerForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewCustomerForm/NewCustomerForm.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewCustomerForm/newCustomerForm.scss" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/NewCustomerForm/newCustomerForm.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/domain/dto/customer/CustomerRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/RestAccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/TransferFundsForm/TransferFundsForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Components/TransferFundsForm/TransferFundsForm.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/Management.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/front-end/src/Pages/Management.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/UsersAndRolesGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/java/com/bankingappfinal/resource/UsersAndRolesGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-h2.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/CustomerControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/CustomerControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/EmployerControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/EmployerControllerIntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-postgres.sql" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/main/resources/data-postgres.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/banking-app-final/src/test/java/com/bankingappfinal/resource/AccountControllerIntegrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -276,7 +256,7 @@
       <workItem from="1664469808319" duration="10878000" />
       <workItem from="1664823865834" duration="10437000" />
       <workItem from="1664992953661" duration="12401000" />
-      <workItem from="1665081071301" duration="8319000" />
+      <workItem from="1665081071301" duration="13826000" />
     </task>
     <task id="LOCAL-00001" summary="prod environment connected to heroku DB">
       <created>1662829998693</created>
@@ -600,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665002618700</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="cash transfers front-end API created, websockets work properly.&#10;employer page,  list and table added.&#10;customers front-end api corrected.&#10;minor bugs resolved">
+      <created>1665090501475</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1665090501475</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +607,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="auditing enabled" />
     <MESSAGE value="request/response dto completed for all entities, request mappers completed" />
     <MESSAGE value="dto mapping bugs for customers and employers resolved" />
     <MESSAGE value="Employer and Customer entities modified such that employer/customer relations are saved through the Employer entity" />
@@ -645,7 +631,8 @@
     <MESSAGE value="notification component for websockets implemented on front end" />
     <MESSAGE value="Websocket notifications configured for all controllers that modify the account balance" />
     <MESSAGE value="front-end API corrected, basic functionality is working" />
-    <option name="LAST_COMMIT_MESSAGE" value="front-end API corrected, basic functionality is working" />
+    <MESSAGE value="cash transfers front-end API created, websockets work properly.&#10;employer page,  list and table added.&#10;customers front-end api corrected.&#10;minor bugs resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="cash transfers front-end API created, websockets work properly.&#10;employer page,  list and table added.&#10;customers front-end api corrected.&#10;minor bugs resolved" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
