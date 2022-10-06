@@ -13,10 +13,11 @@ import SockJS from "sockjs-client";
 import Stomp from "stompjs";
 import { CashTransfers } from "Pages/CashTransfers";
 import Employers from "Pages/Employers";
+import { ThreeCircles } from "react-loader-spinner";
 
 function App() {
   let websocket = null;
-  const [params, setparams] = useState();
+
   useEffect(() => {
     const socket = new SockJS("http://localhost:9000/ws");
     websocket = Stomp.over(socket);
@@ -42,8 +43,8 @@ function App() {
         draggable
         pauseOnHover
       />
+
       <main>
-        <p>{params}</p>
         <Routes>
           <Route path="/customers/*" element={<Customers />} />
           <Route path="/employers/*" element={<Employers />} />
