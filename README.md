@@ -1,5 +1,6 @@
 The project is deployed here:
 http://banking-app-final.herokuapp.com/
+
 Heroku may take 10 seconds to load the application. If there is an error, you just need to reload the page
 To log in use these credentials:
 1. Username: user / Password: user
