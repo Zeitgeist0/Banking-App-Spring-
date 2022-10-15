@@ -27,6 +27,7 @@ Technologies used:  Spring Boot, Spring Data/JPA, DAO/Service/Controller design 
 8. Websockets (STOMP and Sock.JS) are used in this project, and they are automatically connected once we log in. Then, when we transfer funds between accounts, there will be a pop up window displayed informing whether the transaction was successfull or not. This is because we were subsribed to the queue "/queue/user", and when the Controller provides a response, it also sends a message to this queue.
 9. There are 2 databases connected to this project. One of them is H2, which is used in the "dev" profile. It is built in the memory of the application and it is really fast and useful for development. The other one is used when we set the "prod" profile, and it connects us to a Postgre database provided by heroku.
 10. Using the create-drop DDL specification, each time we run the application, all tables are deleted and then all entities are created according to our classes. The data is loaded automatically with SQL queries.
+11. Service layer is covered with JUnit/Mockito tests, and controllers are covered with full integration tests.
 
 /Front-end specifications
 1. React was used for this project. The different sections mapping was created with ReactBrowser, so we can easily navigate between them.
