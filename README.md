@@ -8,6 +8,7 @@ To log in use these credentials:
 The complete source code of this project is located at the banking-app-final folder. The other folders/versions have only half of the implementations, one of them was created to practice with pure SQL and JDBC, and the other one uses Hibernate ORM. 
 
 ///Technical specifications of banking-app-final
+
 In order to run this app locally, it is needed to import the module using the pom file, and then use the Maven plugin to execute spring-boot:run. It may be needed to run clean/package before.
 Technologies used:  Spring Boot, Spring Data/JPA, DAO/Service/Controller design pattern,  REST API, DTO mapping,  Spring security, Auditing, AOP, Slf4j logging, websockets and React + React Browser.
 
