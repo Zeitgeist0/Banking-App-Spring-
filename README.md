@@ -1,5 +1,6 @@
 The project is deployed here:
 http://banking-app-final.herokuapp.com/
+Heroku may take 10 seconds to load the application. If there is an error, you just need to reload the page
 To log in use these credentials:
 1. Username: user / Password: user
 2. Username: admin / Password: admin
@@ -28,7 +29,7 @@ Technologies used:  Spring Boot, Spring Data/JPA, DAO/Service/Controller design 
 10. Using the create-drop DDL specification, each time we run the application, all tables are deleted and then all entities are created according to our classes. The data is loaded automatically with SQL queries.
 
 /Front-end specifications
-1.React was used for this project. The different sections mapping was created with ReactBrowser, so we can easily navigate between them.
+1. React was used for this project. The different sections mapping was created with ReactBrowser, so we can easily navigate between them.
 2. In the API folder I wrote the functions that will call the endpoints.
 3. Each time we load a new section, for example Customers,  the useEffect hook automatically calls the endpoint that provides the list of all customers, and they are loaded into a list of Customers.
 4. Loading spinner was added because the Postgre database provided by heroku has low performance as it is free. During the development phase it was used the H2 database and everything was loaded much faster.
