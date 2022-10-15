@@ -6,7 +6,7 @@ export default async function createNewCustomer(
   phoneNumber
 ) {
   try {
-    const res = await fetch(`http://localhost:9000/customers`, {
+    const res = await fetch(`/customers`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

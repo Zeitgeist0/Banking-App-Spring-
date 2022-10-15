@@ -1,6 +1,6 @@
 export default async function withdrawFunds(number, funds) {
   try {
-    const res = await fetch(`http://localhost:9000/accounts/withdrawFunds`, {
+    const res = await fetch(`/accounts/withdrawFunds`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

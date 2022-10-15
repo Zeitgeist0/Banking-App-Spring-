@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/employers")
-@CrossOrigin(origins = {"http://localhost:3000"})
+@CrossOrigin(origins = "*")
 public class RestEmployerController {
   private final EmployerService employerService;
   private final EmployerResponseMapper employerResponseMapper;

@@ -1,6 +1,6 @@
 export default async function createNewAccount(currency, customerId, balance) {
   try {
-    const res = await fetch(`http://localhost:9000/accounts`, {
+    const res = await fetch(`/accounts`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

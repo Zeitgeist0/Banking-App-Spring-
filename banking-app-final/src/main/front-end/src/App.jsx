@@ -19,7 +19,7 @@ function App() {
   let websocket = null;
 
   useEffect(() => {
-    const socket = new SockJS("http://localhost:9000/ws");
+    const socket = new SockJS("/ws");
     websocket = Stomp.over(socket);
     websocket.connect({}, function (frame) {
       console.log("Connected: " + frame);

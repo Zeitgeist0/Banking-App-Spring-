@@ -1,6 +1,6 @@
 export default async function deleteAccount(accountNumber) {
   try {
-    const res = await fetch(`http://localhost:9000/accounts/deleteByNumber`, {
+    const res = await fetch(`/accounts/deleteByNumber`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

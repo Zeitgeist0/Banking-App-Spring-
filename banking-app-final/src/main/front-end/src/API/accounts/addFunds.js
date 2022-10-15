@@ -1,6 +1,6 @@
 export default async function addFunds(number, funds) {
   try {
-    const res = await fetch(`http://localhost:9000/accounts/addFunds`, {
+    const res = await fetch(`/accounts/addFunds`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

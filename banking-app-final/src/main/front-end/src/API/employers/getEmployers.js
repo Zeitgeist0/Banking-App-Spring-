@@ -1,7 +1,7 @@
 export default async function getEmployers() {
   try {
     let response;
-    response = await fetch("http://localhost:9000/employers/all", {
+    response = await fetch("/employers/all", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

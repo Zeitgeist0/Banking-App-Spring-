@@ -4,7 +4,7 @@ export default async function transferFunds(
   funds
 ) {
   try {
-    const res = await fetch(`http://localhost:9000/accounts/transferFunds`, {
+    const res = await fetch(`/accounts/transferFunds`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

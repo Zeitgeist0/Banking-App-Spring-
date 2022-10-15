@@ -1,6 +1,6 @@
 export default async function saveEmployer(name, address, customerIds) {
   try {
-    const res = await fetch(`http://localhost:9000/employers`, {
+    const res = await fetch(`/employers`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
