@@ -33,4 +33,4 @@ Technologies used:  Spring Boot, Spring Data/JPA, DAO/Service/Controller design 
 2. In the API folder I wrote the functions that will call the endpoints.
 3. Each time we load a new section, for example Customers,  the useEffect hook automatically calls the endpoint that provides the list of all customers, and they are loaded into a list of Customers.
 4. Loading spinner was added because the Postgre database provided by heroku has low performance as it is free. During the development phase it was used the H2 database and everything was loaded much faster.
-5. ReactToastify was used for the pop-un windows that are displayed by the websockets.
+5. ReactToastify was used for the pop-up windows that are displayed by the websockets.
