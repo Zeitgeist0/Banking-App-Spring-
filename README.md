@@ -1,7 +1,7 @@
 The project is deployed here:
-http://banking-app-final.herokuapp.com/
+http://banking-app-final.herokuapp.com/login
 
-Heroku may take 10 seconds to load the application. If there is an error, you just need to reload the page.
+Heroku may take 10 seconds to load the application. The first time that we open the website there can be an error shown by heroku, but actually there are no real errors, you just need to reload the page and everything will work properly.
 
 To log in use these credentials:
 
