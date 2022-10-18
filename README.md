@@ -34,7 +34,7 @@ Technologies used:  Spring Boot, Spring Data/JPA, DAO/Service/Controller design 
 11. Service layer is covered with JUnit/Mockito tests, and controllers are covered with full integration tests.
 
 /Front-end specifications
-1. React was used for this project. The different sections mapping was created with ReactBrowser, so we can easily navigate between them.
+1. React was used for this project. The different sections mapping was created with React Router, so we can easily navigate between them.
 2. In the API folder I wrote the functions that will call the endpoints.
 3. Each time we load a new section, for example Customers,  the useEffect hook automatically calls the endpoint that provides the list of all customers, and they are loaded into a list of Customers.
 4. Loading spinner was added because the Postgre database provided by heroku has low performance as it is free. During the development phase it was used the H2 database and everything was loaded much faster.
